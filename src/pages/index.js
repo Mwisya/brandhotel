@@ -1,0 +1,6 @@
+export {default as Home} from './Home/Home'
+export {default as Meetings} from './Meetings/Meetings'
+export {default as AboutUs} from './AboutUs/AboutUs'
+export {default as ContactUs} from './ContactUs/ContactUs'
+export {default as Gallery} from './Gallery/Gallery'
+export {default as AccomodationPage} from './AccomodationPage/AccomodationPage'

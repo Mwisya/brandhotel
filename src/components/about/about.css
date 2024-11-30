@@ -1,0 +1,21 @@
+.about{
+    padding: 16px;
+    margin-bottom: 64px;
+}
+.about-info{
+    line-height: 32px;
+    width: min(900px, 100%);
+    margin: 32px auto 0;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.contact h2{
+    margin: 16px auto;
+    padding-bottom: 5px;
+    width: max-content;
+    border: 0;
+    border-bottom: 3px solid red;
+}

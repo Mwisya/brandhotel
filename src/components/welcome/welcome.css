@@ -1,0 +1,22 @@
+.welcome{
+    text-align: center;
+    background-color: #76871D;
+    color: white;
+}
+.welcome-wrapper{
+    padding: 16px 16px 32px;
+    margin: 0 auto;
+    width: min(900px, 100%);
+    display: block;
+}
+.welcome h2{
+    margin: 24px auto 16px;
+    width: max-content;
+    font-weight: 400;  
+    text-align: center;
+    text-transform: uppercase;
+}
+.welcome p{
+    line-height: 30px;
+    text-align: center;
+}

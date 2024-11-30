@@ -1,0 +1,41 @@
+.room{
+    width: 100%;
+    height: 580px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.room img{
+    width: 100%;
+    height: 300px;
+}
+.room_info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 16px;
+}
+.room_info h2{
+    margin: 0;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.room_info p{
+    height: 130px;
+    line-height: 24px;
+    text-align: start;
+}
+
+.room_info a{
+    background-color: black;
+    color: white;
+    padding: 12px 32px;
+}
+
+@media screen and (min-width:900px) {
+    .room{
+        width: 450px;
+    }
+}

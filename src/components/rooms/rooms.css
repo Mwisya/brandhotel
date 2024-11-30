@@ -1,0 +1,17 @@
+.rooms{
+    width: 100%;
+    padding: 16px;
+}
+.rooms h1{
+    margin: 32px 0 32px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.rooms-wrapper{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 100px;
+    column-gap: 60px;
+}

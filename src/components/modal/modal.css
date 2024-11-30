@@ -1,0 +1,19 @@
+.modal{
+    background-color: #191919;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.close{
+    position: absolute;
+    right: 16px;
+    top: 32px;
+}
+.close svg{
+    color: white;
+    font-size: 24px;
+}
