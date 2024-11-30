@@ -1,11 +1,10 @@
 import {Routes, Route} from 'react-router-dom';
 import { Footer, Header } from './components';
 import { AboutUs, AccomodationPage, ContactUs, Gallery, Home, Meetings } from './pages';
-import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Header/>
       <Routes>
         <Route path='/' element={<Home/>}/>
@@ -16,7 +15,7 @@ function App() {
         <Route path='/meetings' element={<Meetings/>}/>
       </Routes>
       <Footer/>
-    </div>
+    </>
   );
 }
 
