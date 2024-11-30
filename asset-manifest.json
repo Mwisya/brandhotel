@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/brand-hotel/static/css/main.df524424.css",
-    "main.js": "/brand-hotel/static/js/main.bfed9c62.js",
-    "static/js/453.b651113b.chunk.js": "/brand-hotel/static/js/453.b651113b.chunk.js",
-    "static/media/hallway.jpg": "/brand-hotel/static/media/hallway.bbdc6696fcc15d0c3ee1.jpg",
-    "static/media/cocktail.jpg": "/brand-hotel/static/media/cocktail.947737edd9c68c0fde4c.jpg",
-    "static/media/conference.jpg": "/brand-hotel/static/media/conference.d34f8618c0cb03d704a9.jpg",
-    "static/media/restaurant.jpg": "/brand-hotel/static/media/restaurant.d3002c36959fd30e1eb5.jpg",
-    "static/media/brandhotel.jpg": "/brand-hotel/static/media/brandhotel.842dfc3e665a1c4339df.jpg",
-    "static/media/familygraduation.jpg": "/brand-hotel/static/media/familygraduation.95f56328c8aa4af51776.jpg",
-    "static/media/walkway.webp": "/brand-hotel/static/media/walkway.da639e28883a35c1f342.webp",
-    "static/media/facility.jpg": "/brand-hotel/static/media/facility.81f10515cb616639142a.jpg",
-    "static/media/blueroom.jpg": "/brand-hotel/static/media/blueroom.58b7b8f91cab15425d7b.jpg",
-    "static/media/poolservice.jpg": "/brand-hotel/static/media/poolservice.767ba4489c8aca74266b.jpg",
-    "static/media/events.jpg": "/brand-hotel/static/media/events.4867f797a7afa8c6ce1b.jpg",
-    "static/media/room.jpg": "/brand-hotel/static/media/room.682e702ec30334a8e4b9.jpg",
-    "index.html": "/brand-hotel/index.html",
-    "main.df524424.css.map": "/brand-hotel/static/css/main.df524424.css.map",
-    "main.bfed9c62.js.map": "/brand-hotel/static/js/main.bfed9c62.js.map",
-    "453.b651113b.chunk.js.map": "/brand-hotel/static/js/453.b651113b.chunk.js.map"
+    "main.css": "/brand/static/css/main.df524424.css",
+    "main.js": "/brand/static/js/main.df8754de.js",
+    "static/js/453.b651113b.chunk.js": "/brand/static/js/453.b651113b.chunk.js",
+    "static/media/hallway.jpg": "/brand/static/media/hallway.bbdc6696fcc15d0c3ee1.jpg",
+    "static/media/cocktail.jpg": "/brand/static/media/cocktail.947737edd9c68c0fde4c.jpg",
+    "static/media/conference.jpg": "/brand/static/media/conference.d34f8618c0cb03d704a9.jpg",
+    "static/media/restaurant.jpg": "/brand/static/media/restaurant.d3002c36959fd30e1eb5.jpg",
+    "static/media/brandhotel.jpg": "/brand/static/media/brandhotel.842dfc3e665a1c4339df.jpg",
+    "static/media/familygraduation.jpg": "/brand/static/media/familygraduation.95f56328c8aa4af51776.jpg",
+    "static/media/walkway.webp": "/brand/static/media/walkway.da639e28883a35c1f342.webp",
+    "static/media/facility.jpg": "/brand/static/media/facility.81f10515cb616639142a.jpg",
+    "static/media/blueroom.jpg": "/brand/static/media/blueroom.58b7b8f91cab15425d7b.jpg",
+    "static/media/poolservice.jpg": "/brand/static/media/poolservice.767ba4489c8aca74266b.jpg",
+    "static/media/events.jpg": "/brand/static/media/events.4867f797a7afa8c6ce1b.jpg",
+    "static/media/room.jpg": "/brand/static/media/room.682e702ec30334a8e4b9.jpg",
+    "index.html": "/brand/index.html",
+    "main.df524424.css.map": "/brand/static/css/main.df524424.css.map",
+    "main.df8754de.js.map": "/brand/static/js/main.df8754de.js.map",
+    "453.b651113b.chunk.js.map": "/brand/static/js/453.b651113b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.df524424.css",
-    "static/js/main.bfed9c62.js"
+    "static/js/main.df8754de.js"
   ]
 }
