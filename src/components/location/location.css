@@ -1,15 +1,26 @@
 .location{
     background-color: white;
     padding: 32px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 .location svg{
     font-size: 40px;
     margin-bottom: 16px;
     color: blue;
+    text-align: center;
+    width: 100%;
 }
 .location h1{
     font-weight: 500;
-    text-transform: capitalize;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+.location h2{
+    font-weight: 500;
+    color: gray;
 }
 
 .location-wrapper{

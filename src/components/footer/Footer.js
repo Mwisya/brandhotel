@@ -46,7 +46,7 @@ const Footer = () => {
             </li>
             <li>
               <label htmlFor="whatsapp"><MdWhatsapp/></label>
-              <a href="http://wa.me/255773467756" id='whatsapp'>Text us on whatsapp</a>
+              <a href="http://wa.me/255773467756" id='whatsapp'>Text us on Whatsapp</a>
             </li>
           </ul>
         </div>
@@ -56,17 +56,17 @@ const Footer = () => {
           <ul>
             <li>
               <label htmlFor="facebook"><FaFacebookF/></label>
-              <a href="http://" id="facebook">brands hotel dodoma</a>
+              <a href="http://www.facebook.com/brandhotel" id="facebook">brand hotel</a>
             </li>
 
             <li>
               <label htmlFor="x"><FaTwitter/></label>
-              <a href="http://" id="x">@brandshoteldodoma</a>
+              <a href="http://x.com/brand_hotel_" id="x">Brand_hotel_</a>
             </li>
 
             <li className='social_li'>
               <label htmlFor="instagram"><FaInstagram/></label>
-              <a href="http://" id="instagram">@brandshoteldodoma</a>
+              <a href="http://instagram.com/brand_hotel_" id="instagram">Brand_hotel_</a>
             </li>
           </ul>
         </div>

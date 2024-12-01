@@ -17,7 +17,7 @@ const NewsLetter = () => {
           <i></i>
           <h2>Brand Hotel</h2>
         </div>
-        <p>Subscribe updates not limited to Offers and Upcoming events</p>
+        <p>Subscribe to get updates not limited to Offers and Upcoming events</p>
         <form onSubmit={handleSubmit} method="post">
           <input type="email" value={email} onChange={handleChange} name="email" id="email" placeholder='Type email' />
           <button type="submit">Send</button>

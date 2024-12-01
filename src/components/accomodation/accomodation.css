@@ -7,27 +7,38 @@
     padding: 16px;
 }
 
+.introduction{
+    text-align: center;
+    background-color: #76871D;
+    color: white;
+}
+
 .info{
     width: min(900px, 100%);
     margin: 0 auto;
-    padding: 12px 0 24px;
-    line-height: 28px;
+    padding: 36px 0 40px;
+    line-height: 26px;
+}
+.accomodation{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
 }
 .accomodation h1{
-    /* width: max-content; */
+    width: max-content;
     text-align: center;
-    font-weight: 500;
-    margin: 16px 0 48px;
+    font-weight: 400;
+    margin: 32px 0 64px;
     text-align: center;
     text-transform: capitalize;
-    padding-bottom: 16px;
-    border-bottom: 2px red solid;
+    padding-bottom: 5px;
+    border-bottom: 3px red solid;
 }
 .grid{
     display: flex;
     flex-direction: column;
     gap: 60px;
-    margin-bottom: 48px;
+    margin-bottom: 64px;
 }
 article{
     overflow: hidden;
@@ -53,48 +64,49 @@ article div p{
 }
 .amenities{
     margin: 16px 0;
+    padding: 0;
 }
 .amenities-h3{
-    font-weight: 700;
+    font-weight: 500;
+    margin-bottom: 16px;
     letter-spacing: 1px;
     text-decoration: cadetblue;
-    text-transform: uppercase;
-}
-article ul li{
-    width: 80%;
-    margin-bottom: 16px;
     text-transform: capitalize;
 }
-.booking{
+
+.amenities ul li{
+    padding: 8px 0;
+    text-transform: capitalize;
+}
+.bookings{
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    justify-content: center;
-    /* box-shadow: 10px 10px 10px rgba(0,0,0,0.1); */
+    display: block;
+    margin-top: 24px;
+    padding: 0;
 }
-.booking h2{
-    font-weight: 500;
-    text-transform: capitalize;
-}
+
 .cost{
-    padding: 8px 16px;
-    color: white;
-    background-color: #191919;
-    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    padding: 4px 0;
+    border-top: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 .cost span{
-    margin: 0 32px;
     text-transform: capitalize;
+    font-size: 17px;
 }
-.booking a{
+.bookings a{
     color: black;
     display: flex;
     align-items: center;
     gap: 16px;
     padding: 8px 0;
 }
-.booking a svg{
+.bookings a svg{
     font-size: 24px;
 }
 @media screen and (min-width:1024px) {

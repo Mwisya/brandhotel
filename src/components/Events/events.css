@@ -14,15 +14,15 @@
     text-align: center;
     background-color: #76871D;
     color: white;
+    margin-bottom: 32px;
 }
-.events article{
+.events-article  div{
     padding: 16px 16px 32px;
-    background-color: #76871D;
     width: min(900px, 100%);
     margin: 0 auto;
     display: block;
 }
-.events article h2{
+.events-article div h2{
     margin: 24px auto 16px;
     width: max-content;
     font-weight: 400;  

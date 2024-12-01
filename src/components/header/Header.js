@@ -40,7 +40,7 @@ const Header = () => {
         <nav className='sidenav'>
           <div className='sidenav-logo'>
             <i>logo</i>
-            <h2>Brand Hotel Dodoma</h2>
+            <h1>Brand Hotel</h1>
           </div>
 
           <div className='close-nav' onClick={close}><MdClose/></div>
@@ -59,10 +59,6 @@ const Header = () => {
             <Link to={item.link} key={index}>{item.item}</Link>
           ))
         }
-        {/* <div className='btns'>
-          <a href="tel:+">call</a>
-          <a href="mailto:brandhotel4@gmail.com">email</a>
-        </div> */}
       </nav>
     </header>
   )

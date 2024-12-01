@@ -3,18 +3,18 @@ import './events.css'
 import { MdOutlineEmail, MdCall } from 'react-icons/md'
 import { meetings } from '../../data/data'
 const Events = () => {
-   
+//    const p = ''
   return (
     <div className='events'>
         <div className='events-article'>
-            <article>
+            <div>
                 <h2 className='line'>overview</h2>
                 <p>
                 Plan your next Conference, Meeting, Graduation ceremonies, Party or family Get together at our facility. We are equiped to make sure all your need and wants are all met to make any activity a success.
                 Our facility is capabile of catering to large group be it a conference or meeting. We delivery unique curlinary experience to our guest not forgetting affordable rooms for  your desired accomadation from Standard rooms to Executive Suite rooms
 
                 </p>
-            </article>
+            </div>
         </div>
         <div className="events-wrapper">
             {meetings.map((meeting, index)=>{

@@ -5,11 +5,13 @@
    align-items: center;
    gap: 16px;
    padding: 32px 0 48px;
+   text-align: center;
    
 }
 .gallery h1{
     font-weight: 400;
-    margin: 16px 0 32px;
+    margin: 16px auto 32px;
+    text-align: centre;
 }
 .gallery_items{
     display: flex;

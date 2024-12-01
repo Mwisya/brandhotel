@@ -29,47 +29,54 @@ import familygraduation from '../brandhotel/slides/familygraduation.jpg'
     }
    ]
 export const services = [
-    {image:brandHotel,
-        title:'Family gateway'
-       },
-       {image:restaurant,
-        title:'Restaurant'
-       },
-       {image:conference,
-        title:'events'
-       },
-       {image:poolservice,
-        title:'Swimming pool'
-       },
-       {image:cocktail,
-        title:'Lounge'
-       },
-       {image:blueroom,
-        title:'Room services'
-       }
+    {
+        image:brandHotel,
+        title:'luxurious rooms & suites',
+    },
+    {
+        image:restaurant,
+        title:'fine dinning restaurant',
+    },
+    {
+        image:cocktail,
+        title:'State-of-art bar',
+    },
+    {
+        image:poolservice,
+        title:'outdoor swimming pool',
+    },
+    {
+        image:conference,
+        title:'business & occasion venues',
+    },
+    {
+        image: facility,
+        title:'high speed Wi-fi',
+    },
+
 ]
 export const meetings  = [
 {
  image:conference,
- tite:'conference',
+ title:'conference',
   desc:' With an array of venues our experienced team is at your service to ensure perfect setting for our delegates. Our facility is capable of catering for a big number of guest with seemless service from start to finish.  Whether you desire indoor or outdoor services, Our team is here to make it happen.'
 },
 {
     image: conference,
-    title:'meeting',
+    title:'meetings',
     desc:'With an array of venues our experienced team is at your service to ensure perfect setting for our delegates. Our facility is capable of catering for a big number of guest with seemless service from start to finish.  Whether you desire indoor or outdoor services, Our team is here to make it happen.'
 
 },
 {
     image:events,
+    title:'events',
     desc:'With an array of venues our experienced team is at your service to ensure perfect setting for our delegates. Our facility is capable of catering for a big number of guest with seemless service from start to finish.  Whether you desire indoor or outdoor services, Our team is here to make it happen.',
-    title:'events'
 
 },
 {
     image:familygraduation,
+    title:'get together',
     desc:'Spending time with family and friends has never been so ecstatic and memorable. Come and enjoy and savour every little moment at Brand Hotel.',
-    title:'get together'
   
 
 },
@@ -92,3 +99,36 @@ export const room = {image: rooms};
 export const fac = {image: facility};
 export const hall = {image:hallway};
 export const conferenceroom = {image: conference};
+
+export const accomodation = [
+    {
+        image:blueroom,
+        title:'standard single',
+        price:'80 000',
+        desc:'This Spacious room easily offers an inviting feel with modern amenities for a relaxing, enjoyable stay for our corporate or leisue guest. Couple up with great view of the city is an ideal room for your next visit. ',
+    },
+    {
+        image:rooms,
+        title:'delux',
+        price:' 100 000',
+        desc:'This Spacious room easily offers an inviting feel with modern amenities for a relaxing, enjoyable stay for our corporate or leisue guest. Couple up with great view of the city is an ideal room for your next visit. ',
+    },
+    {
+        image:blueroom,
+        title:'double delux',
+        price:'150 000',
+        desc:'This Spacious room easily offers an inviting feel with modern amenities for a relaxing, enjoyable stay for our corporate or leisue guest. Couple up with great view of the city is an ideal room for your next visit. ',
+    },
+    {
+        image:rooms,
+        title:'suite',
+        price:'180 000',
+        desc:'This Spacious room easily offers an inviting feel with modern amenities for a relaxing, enjoyable stay for our corporate or leisue guest. Couple up with great view of the city is an ideal room for your next visit. ',
+    },
+    {
+        image:blueroom,
+        title:'executive suite',
+        price:' 200 000',
+        desc:'This Spacious room easily offers an inviting feel with modern amenities for a relaxing, enjoyable stay for our corporate or leisue guest. Couple up with great view of the city is an ideal room for your next visit. ',
+    }
+]

@@ -13,7 +13,7 @@ const About = () => {
           <p>Located in Kisasa, Dodoma</p>
           <a href="mailto:brandhotel4@gmail.com">Brandhotel@gmail.com</a>
           <a href="tel:+255773467756">+255-773-467-756</a>
-          <div>Talk to us through WhatsApp <a href="http://wa.me/255773467756">+255-773-467-756</a>
+          <div>Chat on WhatsApp <a href="http://wa.me/255773467756">+255-773-467-756</a>
           
           </div>
         </div>
