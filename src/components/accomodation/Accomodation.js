@@ -1,9 +1,25 @@
 import React from 'react'
 import './accomodation.css'
-import { MdEmail, MdPhone } from 'react-icons/md'
+import { MdAir, MdBalcony, MdCoffeeMaker, MdCurtains,  MdOutlineEmail, MdPhone, MdTv } from 'react-icons/md'
 import {accomodation} from '../../data/data'
+import { MdOutlineBed, MdOutlineRoomService, MdRoomPreferences } from 'react-icons/md'
+import { FaShower, FaWifi } from 'react-icons/fa'
+
+const icons = [
+  {icon:<MdRoomPreferences/>,title:'Spacious room'},
+  {icon:<MdOutlineBed/>,title:'King size bed'},
+  {icon:<MdTv/>,title:'large smart Tv'},
+  {icon:<FaWifi/>,title:'High speed Wi-fi'},
+  {icon:<FaShower/>,title:'Private shower & WC'},
+  {icon:<MdBalcony/>,title:'Private shower & WC'},
+  {icon:<MdOutlineRoomService/>,title:'In room service available'},
+  {icon:<MdCoffeeMaker/>,title:'Tea / Coffee maker'},
+  {icon:<MdCurtains/>,title:'Black out curtains'},
+  {icon:<MdAir/>,title:'air conditioning'},
+]
 
 const Accomodation = () => {
+
   return (
     <section className='accomodation-container'>
       <div className='introduction'>
@@ -26,23 +42,20 @@ const Accomodation = () => {
                   <div className='amenities'>
                     <h3 className='amenities-h3'>amenities</h3>
                     <ul>
-                      <li>High speed wifi</li>
-                      <li>Large smart TV</li>
-                      <li>Tea/Cofee  facility</li>
-                      <li>Private shower & WC</li>
-                      <li>Air conditoning</li>
-                      <li>in Room Services available</li>
-                      <li>King Sized bed</li>
-                      <li>Balcony access</li>
-                      <li>black out curtains</li>
-                      <li>complete room amenities set up Hairdryer, bedroom slippers & toiletries</li>
+                      {
+                        icons.map((item)=>{
+                          return(
+                            <li> <i>{item.icon}</i> {item.title}</li>
+                          )
+                        })
+                      }
                     </ul> 
                     <div className='bookings'>
                       <div className="cost"> 
                         <h3>Book now</h3>
                         <span>Tsh {room.price}</span>
                       </div>
-                      <a href="mailto:brandhotel4@gmail.com"><MdEmail/> Brandhotel4@gmail.com</a>
+                      <a href="mailto:brandhotel4@gmail.com"><MdOutlineEmail/> Brandhotel4@gmail.com</a>
                       <a href="tel:+255773467756"><MdPhone/>+255-773-467-756</a>
                     </div>
 

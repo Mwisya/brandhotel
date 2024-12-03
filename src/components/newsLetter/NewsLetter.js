@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import './newsLetter.css'
+import { MdNotifications } from 'react-icons/md';
 
 const NewsLetter = () => {
   const [email, setEmail]= useState('');
@@ -15,14 +16,15 @@ const NewsLetter = () => {
       <div className='newsletter-wrapper'>
         <div className='logo'>
           <i></i>
-          <h2>Brand Hotel</h2>
+          <h3>Become Brand's hotel loyal!</h3>
+          <h2>sing up for our newsletter</h2>
         </div>
-        <p>Subscribe to get updates not limited to Offers and Upcoming events</p>
         <form onSubmit={handleSubmit} method="post">
-          <input type="email" value={email} onChange={handleChange} name="email" id="email" placeholder='Type email' />
-          <button type="submit">Send</button>
+        <p>Hear about our latest Offers and upcoming events by signing up to our mailing list.</p>
+          <input type="email" value={email} onChange={handleChange} name="email" id="email" placeholder='Enter email . . .' />
+          <button type="submit"> <MdNotifications/> Subscribe</button>
         </form>
-      </div>
+        </div>
     </section>
   )
 }

@@ -10,7 +10,7 @@ header{
     position: sticky;
     top: 0;
     left: 0;
-    z-index: 500;
+    z-index: 900;
 }
 .logo{
     width: max-content;
@@ -35,6 +35,7 @@ header{
     letter-spacing: 1px;
     color: #191919;
     font-weight: 500;
+    text-transform: uppercase;
 }
 .sidenav{
     height: 100vh;
@@ -52,14 +53,7 @@ header{
     animation: scale-up 250ms ease;
 }
 
-@keyframes scale-up {
-    0%{
-        scale: 0;
-    }
-    100%{
-        scale: 1;
-    }
-}
+
 .sidenav-logo{
   margin-bottom: 24px;
   display: flex;
@@ -113,7 +107,14 @@ header{
     color: black;
     letter-spacing: 1px;
 }
-
+@keyframes scale-up {
+    0%{
+        scale: 0;
+    }
+    100%{
+        scale: 1;
+    }
+}
 @media screen and (min-width:1024px) {
     header{
         padding: 16px 20px;

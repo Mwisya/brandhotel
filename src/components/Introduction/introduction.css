@@ -1,0 +1,36 @@
+.intro{
+    width: 100%;
+    background-color: #76871D;
+}
+.intro-wrapper{
+    color: white;
+    width: 100%;
+    padding: 32px 16px 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+.intro-heading{
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.intro-content{
+    line-height: 24px;
+    text-align: center;
+}
+
+@media screen and (min-width:768px) {
+    .intro-wrapper{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .intro-wrapper{
+        width: 80%;
+    }
+}

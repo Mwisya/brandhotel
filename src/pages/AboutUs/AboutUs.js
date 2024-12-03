@@ -1,5 +1,5 @@
 import React from 'react'
-import {About, Display } from '../../components'
+import {About, Display, NewsLetter } from '../../components'
 import { fac } from '../../data/data'
 
 
@@ -9,6 +9,7 @@ const AboutUs = () => {
     <main>
       <Display title={title} image={fac.image}/>
       <About/>
+      <NewsLetter/>
     </main>
   )
 }

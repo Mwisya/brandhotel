@@ -5,6 +5,19 @@
     align-items: center;
     margin-top: 100px;
 }
+.offer{
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: crimson;
+}
+.offer h2{
+    text-transform: uppercase;
+}
+.offer p{
+    font-size: 20px;
+}
 .services h1{
     font-weight: 400;
     text-transform: uppercase;
@@ -16,7 +29,6 @@
 }
 
 .figure-container{
-    width: min(700px, 100%);
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -92,6 +104,11 @@ figure div img{
 }
 
 @media screen and (min-width:900px){
+    .services-wrapper{
+        padding: 0 32px;
+        display: flex;
+        gap: 60px;
+    }
     .services-container{
         flex-wrap: wrap;
         align-items: center;
@@ -99,4 +116,20 @@ figure div img{
         margin: 0 auto;
         width: 90%;
     }
+}
+
+@media screen and (min-width:1024px){
+    .services-wrapper{
+       width: 90%;
+       margin: 0;
+    }
+   
+}
+
+@media screen and (min-width:1250px){
+    .services-wrapper{
+       width: 80%;
+       margin: 0;
+    }
+   
 }

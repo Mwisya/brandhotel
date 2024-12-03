@@ -41,8 +41,8 @@ const Rooms = () => {
       <h1>Our rooms</h1>
       <div className='rooms-wrapper'>
         {
-          rooms.map((room)=>{
-            return <Room room={room}/>
+          rooms.map((room, index)=>{
+            return <Room key={index} room={room}/>
           })
         }
       </div>

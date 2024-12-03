@@ -19,7 +19,7 @@ import familygraduation from '../brandhotel/slides/familygraduation.jpg'
      title:'Swimming pool'
     },
     {image:walkway,
-     title:'Best place'
+     title:'Be at the best'
     },
     {image:conference,
      title:'Meetings'
