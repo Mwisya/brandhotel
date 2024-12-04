@@ -1,25 +1,16 @@
 import React from 'react'
 import './about.css'
-import Experiences from '../experiences/Experiences'
 
 const About = () => {
   return (
-    <div className='about'>
-      <p className='about-info'>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore velit architecto optio aliquam deserunt voluptatem dolor ipsam provident aut quos. Similique sed minima delectus corporis odio suscipit harum unde laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut temporibus nisi voluptatem illum excepturi deserunt voluptate tempora molestias nulla doloremque, odio rem nesciunt fugit mollitia suscipit earum natus ipsum, consequatur quibusdam! Iste quis corrupti, magnam voluptatum, in officia sed quibusdam eius illum impedit facilis incidunt iusto nemo nam eligendi quisquam?
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, voluptatibus dolor explicabo odio molestias eos dolore deserunt qui magnam repellendus suscipit, quo, distinctio officia consectetur libero. Voluptatum quos dolorum cum. voluptatibus dolor explicabo odio molestias eos dolore deserunt qui magnam repellendus suscipit, quo, distinctio officia consectetur libero. Voluptatum quos dolorum cum
-      </p>
-      <Experiences/>
-      <div className='contact'>
-        <h2>Contact Us</h2>
-        <p>Located in Kisasa, Dodoma</p>
-        <a href="mailto:brandhotel4@gmail.com">Brandhotel@gmail.com</a>
-        <a href="tel:+255773467756">+255-773-467-756</a>
-        <div>Chat on WhatsApp <a href="http://wa.me/255773467756">+255-773-467-756</a>
-        
-        </div>
+    <section className='about'>
+      <div className='about-wrapper'>
+        <h1 className='about-heading'>brand hotel</h1>
+        <p className='about-content'>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa reiciendis vitae reprehenderit, cumque velit maxime? Ea alias, dolores, deleniti culpa cupiditate magnam repudiandae quae sint officiis laudantium perspiciatis, esse harum?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae repellat unde ipsa totam? Inventore hic, natus pariatur assumenda at vel quibusdam perspiciatis tempore dicta consequuntur, similique tempora voluptate error voluptas. Dolore ut dolor, sed, quasi velit possimus error, beatae nobis labore doloribus magnam in quis deserunt ipsa sapiente laboriosam quibusdam enim quos consequuntur id tempora reiciendis recusandae voluptas earum! Sunt autem adipisci consequatur architecto laudantium deleniti alias harum laborum molestias, blanditiis aut a quidem distinctio iure voluptatum magni assumenda magnam ipsum voluptate itaque. Assumenda laudantium corrupti ducimus! Fugit rem, ea repellat quia repellendus cumque aut reiciendis totam voluptas corrupti sunt?
+        </p>
       </div>
-    </div>
+    </section>
   )
 }
 

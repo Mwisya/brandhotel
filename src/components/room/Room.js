@@ -6,7 +6,7 @@ import { FaShower, FaTv, FaWifi } from 'react-icons/fa'
 
 
 const icons = [
-  {icon:<MdRoomPreferences/>,title:'32M'},
+  {icon:<MdRoomPreferences/>,title:'Big rooms'},
   {icon:<MdOutlineBed/>,title:'King bed'},
   {icon:<FaTv/>,title:'smart Tv'},
   {icon:<FaWifi/>,title:'Wi-fi'},
@@ -19,7 +19,7 @@ const Room = ({room}) => {
     <div className='room'>
       <img src={room.image} alt="" />
       <div className='room_info'>
-        <h2>{room.name}</h2>
+        <h1>{room.name}</h1>
         <p>{room.desc}</p>
         <h2 className='icons-heading'>amenites</h2>
         <ul className='icons'>
@@ -32,8 +32,8 @@ const Room = ({room}) => {
             )
           })}
         </ul>
+      <Link to={'/accomodation'}>Explore more</Link>
       </div>
-      <Link to={'/accomodation'}>View Details</Link>
     </div>
   )
 }

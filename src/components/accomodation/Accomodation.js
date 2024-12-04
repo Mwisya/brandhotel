@@ -22,19 +22,13 @@ const Accomodation = () => {
 
   return (
     <section className='accomodation-container'>
-      <div className='introduction'>
-        <p className='info'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, assumenda! Velit quasi, asperiores molestias est a saepe ipsa facilis ratione magni vitae corporis cupiditate alias? In repellendus ea quibusdamvitae corporis cupiditate alias? In repellendus ea quibusdam ut?
-        </p>
-      </div>
-
       <div className='accomodation'>
         <h1>our rooms</h1>
         <div className='grid'>
           {
-            accomodation.map((room)=>{
+            accomodation.map((room, index)=>{
               return(
-              <article className='top'>
+              <article key={index} className='top'>
                 <img src={room.image} alt="" />
                 <div className='details'>
                   <h2>{room.title}</h2>
@@ -43,9 +37,9 @@ const Accomodation = () => {
                     <h3 className='amenities-h3'>amenities</h3>
                     <ul>
                       {
-                        icons.map((item)=>{
+                        icons.map((item,index)=>{
                           return(
-                            <li> <i>{item.icon}</i> {item.title}</li>
+                            <li key={index} > <i>{item.icon}</i> {item.title}</li>
                           )
                         })
                       }
@@ -53,7 +47,7 @@ const Accomodation = () => {
                     <div className='bookings'>
                       <div className="cost"> 
                         <h3>Book now</h3>
-                        <span>Tsh {room.price}</span>
+                        <p><span className='from'>from</span> Tsh {room.price}</p>
                       </div>
                       <a href="mailto:brandhotel4@gmail.com"><MdOutlineEmail/> Brandhotel4@gmail.com</a>
                       <a href="tel:+255773467756"><MdPhone/>+255-773-467-756</a>
@@ -61,7 +55,6 @@ const Accomodation = () => {
 
                   </div>
                 </div>
-                
               </article>
               )
             })

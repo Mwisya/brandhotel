@@ -1,24 +1,24 @@
 .intro{
     width: 100%;
     background-color: #76871D;
+    color: white;
 }
 .intro-wrapper{
-    color: white;
-    width: 100%;
-    padding: 32px 16px 48px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
+    padding: 16px 16px 64px;
+    margin: 0 auto;
+    width: min(900px, 100%);
+    display: block;
 }
 .intro-heading{
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    margin: 24px auto 16px;
+    width: max-content;
+    font-weight: 400;  
     text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1px;
 }
 .intro-content{
-    line-height: 24px;
+    line-height: 30px;
     text-align: center;
 }
 
@@ -31,6 +31,6 @@
 
 @media screen and (min-width:1024px) {
     .intro-wrapper{
-        width: 80%;
+        width: 800px;
     }
 }

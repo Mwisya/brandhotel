@@ -1,14 +1,15 @@
 import React from 'react'
-import {About, Display, NewsLetter } from '../../components'
+import {About, Display, Experiences, NewsLetter } from '../../components'
 import { fac } from '../../data/data'
 
 
 const AboutUs = () => {
-  const title = 'About Us'
+  const title = 'About'
   return (
     <main>
       <Display title={title} image={fac.image}/>
       <About/>
+      <Experiences/>
       <NewsLetter/>
     </main>
   )

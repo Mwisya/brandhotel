@@ -1,6 +1,5 @@
 .room{
     width: 100%;
-    border-radius: 10px;
     box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
     overflow: hidden;
     flex-shrink: 0;
@@ -17,9 +16,15 @@
     gap: 16px;
     padding: 16px;
 }
+.room_info h1{
+    margin: 0;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 0;
+}
 .room_info h2{
     margin: 0;
-    font-weight: 400;
+    font-weight: 500;
     text-transform: capitalize;
 }
 .room_info p{
@@ -34,10 +39,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 38px;
-    grid-template-rows: repeat(2, 1fr);
-
-    align-items: start;
-    justify-items: start;
+    grid-template-rows: auto;
    
 }
 .icons li{
@@ -54,15 +56,25 @@
     text-align: center;
 }
 .room a{
+    display: flex;
+    align-self: flex-end;
     background-color: goldenrod;
     color: white;
     padding: 12px 32px;
-    display: flex;
-    justify-self: flex-end;
     margin: 32px 16px 16px 16px;
 }
 @media screen and (min-width:900px) {
     .room{
-        width: 400px;
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 48px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .room{
+        width: 900px;
     }
 }

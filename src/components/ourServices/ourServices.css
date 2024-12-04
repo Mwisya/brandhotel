@@ -10,7 +10,8 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-    background-color: crimson;
+    background-color: #76871D;
+    color: white;
 }
 .offer h2{
     text-transform: uppercase;

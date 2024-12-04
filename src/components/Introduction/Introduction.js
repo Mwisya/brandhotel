@@ -1,12 +1,13 @@
 import React from 'react'
+import './introduction.css'
 
-const Introduction = () => {
+const Introduction = ({overview}) => {
   return (
-    <section className='inro'>
-        <div className='intro-wrapper'>
-            <h1 className='inro-heading'>heading</h1>
-            <p className='intro-content'>content</p>
-        </div>
+    <section className='intro'>
+      <div className='intro-wrapper'>
+        <h1 className='intro-heading'>{overview.heading}</h1>
+        <p className='intro-content'>{overview.content}</p>
+      </div>
     </section>
   )
 }

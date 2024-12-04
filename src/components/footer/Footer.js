@@ -9,7 +9,7 @@ const Footer = () => {
     <footer>
       <div className='footer-wrapper'>
         <div className='quick_links'>
-          <h4>Quick links</h4>
+          <h3>Quick links</h3>
           <ul className='quick-links'>
               <li>
                 <Link to={'/'} className='quick-link'>Home</Link>
@@ -21,17 +21,44 @@ const Footer = () => {
                 <Link to={'gallery'} className='quick-link'>gallery</Link>
               </li>
               <li>
-                <Link to={'about'} className='quick-link'>About</Link>
+                <Link to={'about'} className='quick-link'>About us</Link>
               </li>
               <li>
-                <Link to={'contact'} className='quick-link'>Contact</Link>     
+                <Link to={'contact'} className='quick-link'>Contact us</Link>     
               </li>
           </ul>    
         </div>
 
-        <div className='contacts'>
-          <h4>Contact</h4>
+        <div className='socials'>
+          <h3>Social media</h3>
           <ul>
+            <li>
+              <FaFacebookF/>
+              <a href="http://www.facebook.com/brandhotel" id="facebook">brand hotel</a>
+            </li>
+
+            <li>
+              <FaTwitter/>
+              <a href="http://x.com/brand_hotel_" id="x">Brand_hotel_</a>
+            </li>
+
+            <li className='social_li'>
+              <FaInstagram/>
+              <a href="http://instagram.com/brand_hotel_" id="instagram">Brand_hotel_</a>
+            </li>
+          </ul>
+        </div>
+        
+        <div className='footer-logo'>
+          <i>logo</i>
+          <h1>brand hotel</h1>
+        </div>
+
+        <div className='contacts'>
+          <h3>Contact</h3>
+          <ul>
+            <li><p>Brand Hotel Dodoma, Tanzania</p> </li>
+            <li><p>Kikoso, Kikoso Rd</p> </li>
             <li>
               <label htmlFor="tel"><MdPhone/></label>
               <a href="tel:+255773467756" id='tel'> +255-773-467-756</a>
@@ -51,25 +78,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className='socials'>
-          <h4>Social media</h4>
-          <ul>
-            <li>
-              <label htmlFor="facebook"><FaFacebookF/></label>
-              <a href="http://www.facebook.com/brandhotel" id="facebook">brand hotel</a>
-            </li>
-
-            <li>
-              <label htmlFor="x"><FaTwitter/></label>
-              <a href="http://x.com/brand_hotel_" id="x">Brand_hotel_</a>
-            </li>
-
-            <li className='social_li'>
-              <label htmlFor="instagram"><FaInstagram/></label>
-              <a href="http://instagram.com/brand_hotel_" id="instagram">Brand_hotel_</a>
-            </li>
-          </ul>
-        </div>
       </div>
     </footer>
   )

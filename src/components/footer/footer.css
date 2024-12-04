@@ -6,10 +6,10 @@ footer{
 }
 .footer-wrapper{
     width: 100%;
-    margin: 0 auto;
+    padding: 32px 2px;
     display: flex;
-    flex-wrap: wrap;
-    gap: 60px;
+    flex-direction: column;
+    gap: 58px;
 }
 .footer-wrapper svg{
     font-size: 20px;
@@ -29,14 +29,13 @@ footer .quick-links .quick-link{
 footer div{
     text-align: start;
 }
-footer h4{
-    margin-bottom: 16px;
-    padding-bottom: 8px;
+footer h3{
+    color: white;
+    margin-bottom: 24px;
     width: max-content;
     font-weight: 400;
     text-transform: uppercase;
     border: 0;
-    border-bottom: 1px solid white
 }
 ul{
     display: flex;
@@ -53,11 +52,24 @@ ul{
    padding: 8px 0;
 }
 
+.footer-logo{
+    height: max-content;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.footer-logo h1{
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    font-weight: 500;
+ }
+
 @media screen  and (min-width:1024px){ 
     .footer-wrapper{
         width: 70%;
         flex-direction: row;
-        align-items: center;
         justify-content: space-between;
         margin: 0 auto;
     }

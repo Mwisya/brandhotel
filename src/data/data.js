@@ -62,23 +62,21 @@ export const meetings  = [
   desc:' With an array of venues our experienced team is at your service to ensure perfect setting for our delegates. Our facility is capable of catering for a big number of guest with seemless service from start to finish.  Whether you desire indoor or outdoor services, Our team is here to make it happen.'
 },
 {
-    image: conference,
-    title:'meetings',
-    desc:'With an array of venues our experienced team is at your service to ensure perfect setting for our delegates. Our facility is capable of catering for a big number of guest with seemless service from start to finish.  Whether you desire indoor or outdoor services, Our team is here to make it happen.'
-
-},
-{
     image:events,
     title:'events',
     desc:'With an array of venues our experienced team is at your service to ensure perfect setting for our delegates. Our facility is capable of catering for a big number of guest with seemless service from start to finish.  Whether you desire indoor or outdoor services, Our team is here to make it happen.',
 
 },
 {
+    image: conference,
+    title:'meetings',
+    desc:'With an array of venues our experienced team is at your service to ensure perfect setting for our delegates. Our facility is capable of catering for a big number of guest with seemless service from start to finish.  Whether you desire indoor or outdoor services, Our team is here to make it happen.'
+
+},
+{
     image:familygraduation,
     title:'get together',
     desc:'Spending time with family and friends has never been so ecstatic and memorable. Come and enjoy and savour every little moment at Brand Hotel.',
-  
-
 },
 ]
 

@@ -1,6 +1,15 @@
 .events{
     width: 100%;
 }
+.events h1{
+    margin: 64px auto 32px;
+    width: max-content;
+    font-weight: 400;  
+    text-align: center;
+    text-transform: capitalize;
+    border-bottom: 3px red solid;
+
+}
 .events-wrapper{
     width: 100%;
     padding: 32px 16px;
@@ -8,27 +17,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 70px;
+    gap: 120px;
 }
-.events-article{
-    text-align: center;
-    background-color: #76871D;
-    color: white;
-    margin-bottom: 32px;
-}
-.events-article  div{
-    padding: 16px 16px 32px;
-    width: min(900px, 100%);
-    margin: 0 auto;
-    display: block;
-}
-.events-article div h2{
-    margin: 24px auto 16px;
-    width: max-content;
-    font-weight: 400;  
-    text-align: center;
-    text-transform: uppercase;
-}
+
 .line{
     font-weight: 400;
     margin: 16px auto 16px;
@@ -45,20 +36,24 @@
     gap: 64px;
     align-items: center;
 }
+.btn h3{
+    color: #F27300;
+}
 .btn a{
-    background-color: black;
+    background-color: #F27300;
     color: white;
-    padding: 6px 32px;
+    padding: 10px 32px;
     text-transform: capitalize;
+    letter-spacing: 1px;
 }
 .event{
-    width: min(900px, 100%);
-    border-radius: 10px;
+    width: min(1000px, 100%);
     overflow: hidden;
     box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
 }
+
 .event-details{
-    padding: 16px 16px 48px 16px;
+    padding: 16px 16px 32px 16px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -77,15 +72,17 @@
 .event-heading{
     text-transform: capitalize;
     font-weight: 500;
+    text-transform: uppercase;
     letter-spacing: 1px;
+
 }
 .contact{
-    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 32px 16px 48px;
+
 }
 .contact > label{
     display: flex;
@@ -113,7 +110,7 @@
     .event{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        height: 400px;
+        /* height: 400px; */
         row-gap: 48px;
     }
 }
