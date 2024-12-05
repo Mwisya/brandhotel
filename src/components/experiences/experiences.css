@@ -26,6 +26,7 @@
 .experiences-wrapper h1{
     text-transform: uppercase;
     font-weight: 400;
+    text-align: center;
 }
 .experience{
     display: flex;

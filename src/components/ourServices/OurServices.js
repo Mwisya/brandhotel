@@ -10,7 +10,7 @@ const OurServices = () => {
       <h1>Our Services</h1>
       <div className='services-wrapper'>
         <div className='offer'>
-          <h2>Hospitality <br/> at it's best...</h2>
+          <h2>Hospitality <br/> at it best...</h2>
           <p>All our guests enjoy free breakfast</p>
         </div>
         <div className='figure-container'>
