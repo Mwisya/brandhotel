@@ -32,7 +32,7 @@ const Contact = () => {
             </label>
             <label htmlFor="call">
               <i><MdCall/></i>
-              <a href="tel:+255773467756" id='call'>+255-773-467-756</a>
+              <a href="tel:+255750866722" id='call'>+255-750-866-722</a>
             </label>
             <label htmlFor="email">
               <i><MdOutlineEmail/></i>

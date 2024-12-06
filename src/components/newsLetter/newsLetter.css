@@ -9,7 +9,7 @@
     flex-direction: column;
     gap: 16px;
     align-items: center;
-    padding: 64px 16px 48px;
+    padding: 64px 0 48px;
 }
 .newsletter-wrapper .logo{
     display: flex;

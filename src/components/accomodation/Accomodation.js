@@ -1,6 +1,6 @@
 import React from 'react'
 import './accomodation.css'
-import { MdAir, MdBalcony, MdCoffeeMaker, MdCurtains,  MdOutlineEmail, MdPhone, MdTv } from 'react-icons/md'
+import { MdAir, MdCoffeeMaker, MdCurtains,  MdOutlineEmail, MdPhone, MdTv } from 'react-icons/md'
 import {accomodation} from '../../data/data'
 import { MdOutlineBed, MdOutlineRoomService, MdRoomPreferences } from 'react-icons/md'
 import { FaShower, FaWifi } from 'react-icons/fa'
@@ -11,7 +11,6 @@ const icons = [
   {icon:<MdTv/>,title:'large smart Tv'},
   {icon:<FaWifi/>,title:'High speed Wi-fi'},
   {icon:<FaShower/>,title:'Private shower & WC'},
-  {icon:<MdBalcony/>,title:'Private shower & WC'},
   {icon:<MdOutlineRoomService/>,title:'In room service available'},
   {icon:<MdCoffeeMaker/>,title:'Tea / Coffee maker'},
   {icon:<MdCurtains/>,title:'Black out curtains'},

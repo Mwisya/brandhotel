@@ -55,10 +55,10 @@ const Footer = () => {
         </div>
 
         <div className='contacts'>
-          <h3>Contact</h3>
+          <h3>Addresse</h3>
           <ul>
             <li><p>Brand Hotel Dodoma, Tanzania</p> </li>
-            <li><p>Kikoso, Kikoso Rd</p> </li>
+            <li><p>Kisasa, Kisasa Road</p> </li>
             <li>
               <label htmlFor="tel"><MdPhone/></label>
               <a href="tel:+255773467756" id='tel'> +255-773-467-756</a>
@@ -73,7 +73,7 @@ const Footer = () => {
             </li>
             <li>
               <label htmlFor="whatsapp"><MdWhatsapp/></label>
-              <a href="http://wa.me/255773467756" id='whatsapp'>Text us on Whatsapp</a>
+              <a href="http://wa.me/255750866722" id='whatsapp'>Text us on Whatsapp</a>
             </li>
           </ul>
         </div>
