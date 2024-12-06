@@ -24,21 +24,6 @@ const Events = () => {
             })}
             
         </div> 
-        <div className="contact">
-            <h2>Talk to us</h2>
-            <label htmlFor="call">
-            <i><MdCall/></i>
-            <a href="tel:+255773467756" id='call'>+255-773-467-756</a>
-            </label>
-            <label htmlFor="call">
-            <i><MdCall/></i>
-            <a href="tel:+255750866722" id='call'>+255-750-866-722</a>
-            </label>
-            <label htmlFor="email">
-            <i><MdOutlineEmail/></i>
-            <a href="mailto:brandhotel4" id='email'>Brandhotel4@gmail.com</a>
-            </label>
-        </div>
     </div>
   )
 }

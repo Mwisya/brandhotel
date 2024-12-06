@@ -76,23 +76,6 @@
     letter-spacing: 1px;
 
 }
-.contact{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 32px 16px 48px;
-
-}
-.contact > label{
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-}
-
-.contact > label svg{
-    font-size: 24px;
-}
 
 @media screen and (min-width: 768px){
     .event{
