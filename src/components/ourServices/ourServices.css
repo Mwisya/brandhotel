@@ -1,35 +1,60 @@
 .services{
     width: 100%;
+    /* background-color: #76871D; */
+}
+.services-wrapper{
+    width: 100%;   
+    padding: 16px 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
+    gap: 32px;
 }
 .offer{
-    padding: 32px;
+    text-align: center;
+    line-height: 1.5;
     display: flex;
+    padding: 0 16px;
     flex-direction: column;
-    gap: 24px;
-    background-color: #76871D;
-    color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    color: black;
+    & i{
+        width: 70px;
+        height: 70px;
+        overflow: hidden;
+        background-color: white;
+    }
+
+    & h1{
+        text-transform: capitalize;
+        font-weight: 500;
+        font-size: 32px;
+    }
+    & p{
+        font-size: 16px;
+    }
 }
-.offer h2{
-    text-transform: uppercase;
-}
-.offer p{
-    font-size: 20px;
-}
-.services h1{
+.whyUs-contact h2{
+    text-transform: capitalize;
     font-weight: 400;
-    text-transform: uppercase;
-    border-bottom: 3px solid red;
-    width: max-content;
-    padding-bottom: 5px;
-    letter-spacing: 1px;
-    margin: 10px 0 48px;
+    margin: 12px 0 16px;
+}
+.whyUs-contact a{
+    background-color: #76871D;
+    padding: 8px 32px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: white;
+    font-size: 18px;
+}
+.whyUs-contact  a svg{
+    font-size: 32px;
+    
 }
 
-.figure-container{
+.slider-container{
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -49,18 +74,18 @@ figure div{
 
 .service-info{
     height: max-content;
-    max-width: 60%;
+    width: auto;
     position: absolute;
     text-align: start;
     left: 0;
     bottom: 16px;
     background-color: rgba(0,0,0,0.2) ;
-    background-color: rgba(220, 20, 60, 0.85);
     z-index: 10;
     padding: 8px 16px;
 }
 .service-info h2{
     font-weight: 400;
+    font-size: 28px;
     color: white;
     text-transform: capitalize;
 }
@@ -100,37 +125,36 @@ figure div img{
     70%{transform: translate(-200%);}
     75%{transform: translate(-300%);}
     95%{transform: translate(-300%);}
-    100%{transform: translate(-400%);}
-    
+    100%{transform: translate(-400%);} 
 }
 
-@media screen and (min-width:900px){
+@media screen and (min-width:768px){
     .services-wrapper{
-        padding: 0 32px;
+        width: 95%;
+        margin: 0 auto;
         display: flex;
-        gap: 60px;
-    }
-    .services-container{
-        flex-wrap: wrap;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
-        margin: 0 auto;
-        width: 90%;
+        gap: 16px;
     }
+    .offer{
+        width: 40%;
+    }
+    .slider-container{
+        width: 60%;
+    }
+    
 }
 
 @media screen and (min-width:1024px){
     .services-wrapper{
-       width: 90%;
-       margin: 0;
+       width: 70%;
     }
-   
 }
 
-@media screen and (min-width:1250px){
+@media screen and (min-width:1220px){
     .services-wrapper{
-       width: 80%;
-       margin: 0;
+       width: 60%;
     }
-   
 }

@@ -11,7 +11,7 @@ const Gallery = () => {
   return (
     <section className='gallery'>
       <div className='gallery-wrapper'>
-      <h1>Explore Gallery</h1>
+        <h1>Explore Gallery</h1>
         <ul className='gallery_items'>
           {
             data.map((file, index)=>{

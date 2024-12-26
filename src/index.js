@@ -5,16 +5,18 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {HashRouter } from 'react-router-dom';
 import ScrollToTop from './ScrollToTop';
+import { RoomsProvider } from './contextApi/roomsContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
      <HashRouter basename="/">
       <ScrollToTop/>
-      <App />
+        <RoomsProvider>
+          <App />
+        </RoomsProvider>
     </HashRouter>
   </React.StrictMode>
 );
-
 
 reportWebVitals();

@@ -1,6 +1,9 @@
 .contact{
     width: 100%;
 }
+.contactUs a{
+    color: black;
+}
 .contact h2{
     font-weight: 400;
 }
@@ -50,7 +53,7 @@
 
 @media screen and (min-width:1024px) {
     .contactUs{
-        width: 1024px;
+        width: 1050px;
         margin: 0 auto;
     }
 }

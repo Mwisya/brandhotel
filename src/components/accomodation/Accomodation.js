@@ -7,7 +7,7 @@ import { FaShower, FaWifi } from 'react-icons/fa'
 
 const icons = [
   {icon:<MdRoomPreferences/>,title:'Spacious room'},
-  {icon:<MdOutlineBed/>,title:'King size bed'},
+  {icon:<MdOutlineBed/>,title:'King sized bed'},
   {icon:<MdTv/>,title:'large smart Tv'},
   {icon:<FaWifi/>,title:'High speed Wi-fi'},
   {icon:<FaShower/>,title:'Private shower & WC'},
@@ -27,7 +27,7 @@ const Accomodation = () => {
           {
             accomodation.map((room, index)=>{
               return(
-              <article key={index} className='top'>
+              <article key={index}>
                 <img src={room.image} alt="" />
                 <div className='details'>
                   <h2>{room.title}</h2>
@@ -45,8 +45,8 @@ const Accomodation = () => {
                     </ul> 
                     <div className='bookings'>
                       <div className="cost"> 
-                        <h3>Book now</h3>
-                        <p><span className='from'>from</span> Tsh {room.price}</p>
+                        <p>Book now</p>
+                        <div>Tsh {room.price}</div>
                       </div>
                       <a href="mailto:brandhotel4@gmail.com"><MdOutlineEmail/> Brandhotel4@gmail.com</a>
                       <a href="tel:+255773467756"><MdPhone/>+255-773-467-756</a>

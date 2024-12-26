@@ -9,7 +9,7 @@
     flex-direction: column;
     gap: 16px;
     align-items: center;
-    padding: 64px 0 48px;
+    padding: 64px 0;
 }
 .newsletter-wrapper .logo{
     display: flex;
@@ -59,10 +59,14 @@ form{
     align-items: center;
     gap: 16px;
 }
+form p{
+    font-size: 14px;
+}
 
 form input{
     background-color: rgba(255,255,255, 0.1);
     padding: 16px;
+    color: white;
     width: 95%;
     height: 50px;
     border: 0;
@@ -70,7 +74,6 @@ form input{
     overflow: hidden;
 }
 form input::placeholder{
-    color: white;
     letter-spacing: 1px;
 }
 button{

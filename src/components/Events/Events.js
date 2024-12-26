@@ -5,7 +5,6 @@ import { meetings } from '../../data/data'
 const Events = () => {
   return (
     <div className='events'>
-        <h1>what we offer</h1>
         <div className="events-wrapper">
             {meetings.map((meeting, index)=>{
                 return(
@@ -15,8 +14,8 @@ const Events = () => {
                         <h2 className='event-heading'>{meeting.title}</h2>
                         <p className='event-description'>{meeting.desc}</p>
                         <div className='btn'>
-                            <h3>Book now</h3>
-                            <a href="tel:+255773467756">Call us</a>
+                          <h3>Book now</h3>
+                          <a href="tel:+255773467756">Call us</a>
                         </div>
                     </div>
                 </div>    

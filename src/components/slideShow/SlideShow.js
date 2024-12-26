@@ -39,7 +39,7 @@ const SlideShow = () => {
                   {index === currentSlide && (
                     <>
                       <img src={slide.image} alt="" />
-                      <h1>{slide.title}</h1>
+                      <h1 className='slide-heading'>{slide.title}</h1>
                     </>
                   )}
                 </div>

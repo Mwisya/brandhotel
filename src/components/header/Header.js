@@ -1,16 +1,9 @@
 import React, { useState } from 'react'
 import './header.css'
-import {MdMenu, MdClose} from 'react-icons/md'
+import {MdMenu} from 'react-icons/md'
 import { Link } from 'react-router-dom'
+import SideNav from '../sideNav/SideNav'
 
-const sideNav = [
-  {item:'home', link:'/'},
-  {item:'accomodation', link:'accomodation'},
-  {item:'gallery', link:'gallery'},
-  {item:'meetings', link:'meetings'},
-  {item:'contact', link:'contact'},
-  {item:'about', link:'about'},
-]
 const topNav = [
   {item:'home', link:'/'},
   {item:'accomodation', link:'accomodation'},
@@ -32,27 +25,13 @@ const Header = () => {
     <header>
       <div className='logo'>
         <i>logo</i>
-        <h2>Brand Hotel</h2>
+        <h4>Brand Hotel</h4>
+        <p>Dodoma</p>
       </div>
 
-      {
-        toggleNav ? 
-        <nav className='sidenav'>
-          <div className='sidenav-logo'>
-            <i>logo</i>
-            <h1>Brand Hotel</h1>
-          </div>
-
-          <div className='close-nav' onClick={close}><MdClose/></div>
-          {
-            sideNav.map((item, index)=>(
-              <Link to={item.link} key={index} onClick={close}>{item.item}</Link>
-            ))
-          }
-        </nav> : null
-      }
-
+      { toggleNav ? <SideNav onClick={close}/>  : null  }
       <div className='menu-bar' onClick={open}><MdMenu/></div>
+
       <nav className='topnav'>
         {
           topNav.map((item, index)=>(

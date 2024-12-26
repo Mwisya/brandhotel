@@ -4,7 +4,7 @@ import { fac } from '../../data/data'
 
 
 const AboutUs = () => {
-  const title = 'About'
+  const title = 'About us'
   return (
     <main>
       <Display title={title} image={fac.image}/>

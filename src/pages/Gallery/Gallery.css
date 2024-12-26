@@ -1,95 +1,25 @@
-.main-gallery{
+.gallery{
     width: 100%;
-    height: auto;
-    background-color: white;
-    padding-bottom: 32px;
 }
-.gallery-wrapper{
-    margin: 0 auto 32px;
-    padding: 32px 16px;
-    
+.gallery-nav{
+    width: min(100%, 900px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 16px;
+    margin-top: 16px;
 }
-.gallery-wrapper h2{
-    margin: 32px auto 32px;
+.gallery-nav_link{
+    color: black;
+    font-size: 18px;
     font-weight: 500;
-    text-align: start;
-    letter-spacing: 1px;
-}
-.gallery-ul{
-   width: 100%;
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: row;
-   justify-content: center;
-   gap: 8px;
-   margin-top: 32px;
-}
-.gallery-ul li{
-    width: 100%;
-    height: 250px;
+    text-transform: capitalize;
+    border-radius: 18px;
     overflow: hidden;
-}
-.gallery-ul li img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    transition: 1s;
-    background-color: lightskyblue;
-}
-.gallery-ul li:hover img{
-    transform: scale(1.1);
-}
-.modal{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.99);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-}
-.modal-image{
-    width: 100%;
-    height: 430px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-}
-.modal-image img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-.close{
-    position: absolute;
-    top: 32px;
-    right: 16px;
-    z-index: 500;
-    font-size: 30px;
-    color: red;
-    cursor: pointer;
 }
 
-@media screen and (min-width:425px) {
-    .gallery-ul{
-        display: grid;
-        grid-template-columns: repeat(2 , 1fr);
-    }
-}
-@media screen and (min-width:1024px) {
-    .gallery-wrapper{
-        padding: 32px;
-    }
-    .gallery-ul{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .gallery-ul li{
-        width: 220px;
-        height: 220px;
-    }
+
+.gallery-nav_link:hover{
+    font-weight: 500;
+    color: goldenrod;
 }

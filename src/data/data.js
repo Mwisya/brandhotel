@@ -31,7 +31,7 @@ import familygraduation from '../brandhotel/slides/familygraduation.jpg'
 export const services = [
     {
         image:brandHotel,
-        title:'luxurious rooms & suites',
+        title:'luxury rooms & suites',
     },
     {
         image:restaurant,
@@ -42,17 +42,14 @@ export const services = [
         title:'State-of-art bar',
     },
     {
-        image:poolservice,
-        title:'outdoor swimming pool',
-    },
-    {
         image:conference,
-        title:'business & occasion venues',
+        title:'Occasion venues',
     },
     {
-        image: facility,
-        title:'high speed Wi-fi',
+        image:brandHotel,
+        title:'cozy rooms & suites',
     },
+   
 
 ]
 export const meetings  = [

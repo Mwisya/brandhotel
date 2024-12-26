@@ -4,8 +4,11 @@ import './display.css'
 const Display = ({title, image}) => {
   return (
     <section className='display'>
-      <img src={image} alt="" />
-      <h1 className='title'>{title}</h1>
+      <img src={image} loading='lazy' alt="" />
+      <div className='display-heading'>
+        <p>explore brand hotel</p>
+        <h1>{title}</h1>
+      </div>
     </section>
   )
 }

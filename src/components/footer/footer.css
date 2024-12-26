@@ -1,77 +1,88 @@
 footer{
+    width: 100%;
     color: white;
-    background-color: #121212;
-    padding: 32px 16px;
-    
+    background-color: black;
 }
 .footer-wrapper{
     width: 100%;
-    padding: 32px 2px;
+    padding: 32px 16px;
     display: flex;
-    flex-direction: column;
-    gap: 58px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
 }
-.footer-wrapper svg{
-    font-size: 20px;
-}
-footer a{
+.footer-item a{
     color: white;
 }
-footer .quick-links{
+.footer-wrapper svg{
+    color: white;
+    font-size: 20px;
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: white;
+}
+.footer-item h3{
+  color: white;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  padding-bottom: 3px;
+  width: max-content;
+  border-bottom: 2px solid white;
+}
+.footer-item ul{
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
-footer .quick-links .quick-link{
+.footer-item ul li .quick-link{
+    color: white;
     text-transform: capitalize;
-    color: white;
 }
-footer div{
-    text-align: start;
-}
-footer h3{
-    color: white;
-    margin-bottom: 24px;
-    width: max-content;
-    font-weight: 400;
-    text-transform: uppercase;
-    border: 0;
-}
-ul{
+.footer-item ul li{
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    gap: 16px;
 }
-.contacts ul li{
-  display: flex;
-  gap: 16px;
-  padding: 8px 0;
-}
-.socials ul li{
-   display: flex;
-   gap: 16px;
-   padding: 8px 0;
-}
-
 .footer-logo{
-    height: max-content;
-    width: max-content;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
+    gap: 16px;
+    margin: 34px 0;
 }
-.footer-logo h1{
-    letter-spacing: 6px;
-    text-transform: uppercase;
-    font-weight: 500;
- }
+.footer-logo i{
+    width: 50px;
+    height: 50px;
+    background-color: goldenrod;
+}
+.footer-logo h2{
+    text-transform: capitalize;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+.footer-logo div{
+    display: flex;
+    gap: 24px;
+}
 
-@media screen  and (min-width:1024px){ 
+@media screen and (min-width:768px) {
     .footer-wrapper{
-        width: 70%;
-        flex-direction: row;
-        justify-content: space-between;
+        width: 95%;
         margin: 0 auto;
     }
-
+   
+}
+@media screen and (min-width:1024px) {
+    .footer-wrapper{
+        width: 85%;
+    }
+}
+@media screen and (min-width:1200px) {
+    .footer-wrapper{
+        width: 70%;
+    }
 }

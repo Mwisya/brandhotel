@@ -1,0 +1,222 @@
+.roomLayout{
+    width: 100%;
+}
+.room-display{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+.room-display img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.amenities-sample{
+    padding: 16px;
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: translateY(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -ms-transform: translateY(-50%, -50%);
+    z-index: 10;
+
+    
+}
+.amenities-sample h1{
+    font-weight: 500;
+    font-size: 32px;
+    color: white;
+    text-transform: capitalize;
+
+}
+.amenities-sample_wrapper{
+    display: flex;
+    gap: 32px;
+    color: white;
+}
+.amenities-sample_wrapper div{
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: capitalize;
+    gap: 16px;
+}
+.amenities-sample_wrapper div svg{
+    font-size: 32px;
+}
+.amenities-sample_wrapper div span{
+    font-size: 16px;
+}
+
+.room-description{
+    width: min(100%, 800px);
+    margin: 16px auto;
+    padding: 40px 16px 38px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    
+    & h1{
+        font-weight: 500;
+    }
+    
+    & p{
+        line-height: 30px;
+        text-align: center;
+    }
+}
+
+.room-amenities{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    & h1{
+      font-weight: 500;
+    }
+}
+.amenities-wrapper{
+    display: flex;
+    flex-direction: column;
+    column-gap: 48px;
+}
+.amenity{
+  padding: 12px 0;
+  text-transform: capitalize;
+  text-align: start;
+  display: flex;
+  gap: 16px;
+
+  & svg{
+    font-size: 24px;
+    color: #F27300;
+  }
+}
+.room-reservation{
+    background-color: rgb(1, 49, 39);
+    color: white;
+    padding: 32px 24px 48px;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    word-wrap: nowrap;
+
+    & h3{
+        text-transform: capitalize;
+        font-weight: 400;
+        color: goldenrod;
+    }
+    & .logo{
+        height: 50px;
+        width: 50px;
+        background-color: goldenrod;
+        margin: 16px 0;
+    }
+}
+.price{
+    word-wrap: nowrap;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 12px 32px;
+    border-top: 1px solid goldenrod;
+    border-bottom: 1px solid goldenrod;
+    margin-bottom: 32px;
+}
+.price i{
+    font-size: 16px;
+    font-weight: 400;
+}
+.room-reservation div{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.contact-details div{
+    display: flex;
+    flex-direction: column;
+}
+.contact-details svg{
+    font-size: 32px;
+    margin-right: 16px;
+}
+.contact-details a{
+    font-size: 18px;
+    color: white;
+    letter-spacing: 1px;
+}
+.room-images{
+    position: relative;
+    width: min(100%, 500px);
+    margin: 0 auto;
+    height: 400px;
+    margin: 64px auto 64px;
+}
+.image-1{
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    width: 48%;
+    height: 280px;
+    flex-shrink: 0;
+    & img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;    
+    }
+}
+.image-2{
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    width: 48%;
+    height: 290px;
+    flex-shrink: 0;
+    & img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        
+    }
+}
+
+@media screen and  (min-width:425px){
+    .amenities-wrapper{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and  (min-width:1024px){
+    .room-items{
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+@media screen and  (min-width:1200px){
+    .room-items{
+        width: 80%;
+    }
+}
