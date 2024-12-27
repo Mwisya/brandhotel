@@ -34,9 +34,9 @@ const SideNav = ({onClick}) => {
           </ul>
           }
         </li>
-        <li><NavLink  onClick={onClick} className='navLink' to={"gallery"}> Gallery</NavLink></li>
-        <li><NavLink  onClick={onClick} className='navLink' to={"Contact"}>Contact us</NavLink></li>
-        <li><NavLink  onClick={onClick} className='navLink' to={"about"}>About us</NavLink></li>
+        <li><NavLink onClick={onClick} className='navLink' to={"gallery"}> Gallery</NavLink></li>
+        <li><NavLink onClick={onClick} className='navLink' to={"Contact"}>Contact us</NavLink></li>
+        <li><NavLink onClick={onClick} className='navLink' to={"about"}>About us</NavLink></li>
       </ul>
     </nav>
   )

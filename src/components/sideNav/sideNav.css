@@ -73,17 +73,15 @@
 .sidenav-items li .navLink{
     color: black;
     font-size: 22px;
-
+    font-weight: 500;
 }
 .sub-menu{
     height: auto;
     cursor: pointer;
     text-align: center;
-    
 }
 .sub-menu svg{
     color: gray;
-    
 }
 
 .sub-menu ul li{

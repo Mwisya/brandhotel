@@ -13,7 +13,7 @@ const Gallery = () => {
       <nav className='gallery-nav'>
         <NavLink className='gallery-nav_link' end to="gallery">rooms</NavLink>
         <NavLink  className='gallery-nav_link' to="facility">facility</NavLink>
-        <NavLink  className='gallery-nav_link' to="restaurant-gallery">restaurant</NavLink>
+        <NavLink  className='gallery-nav_link' to="restaurant">restaurant</NavLink>
         <NavLink  className='gallery-nav_link' to="meetings">meetings</NavLink>
       </nav>
  

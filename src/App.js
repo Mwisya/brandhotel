@@ -20,6 +20,7 @@ function App() {
       
       <Route path='gallery' element={<Gallery/>}>
         <Route index element={<RoomsGallery/>}/>
+        <Route path='gallery' element={<RoomsGallery/>}/>
         <Route path='facility' element={<Facility/>}/>
         <Route path='restaurant' element={<BarAndRestaurant/>}/>
         <Route path='meetings' element={< MeetingsAndEvents/>}/>

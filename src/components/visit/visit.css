@@ -23,11 +23,8 @@
     gap: 8px;
     align-items: center;
     justify-content: flex-start;
-    overflow: hidden;
-
-    scroll-behavior: smooth;
     overflow-x: scroll;
-    
+ 
 }
 .visit-wrapper::-webkit-scrollbar{
     display: none;
@@ -41,6 +38,7 @@
     flex-shrink: 0;
     position: relative;
     background-color: #fff;
+    scroll-snap-type: x proximity;
 }
 
 .visit-item img{
