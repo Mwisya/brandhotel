@@ -21,20 +21,20 @@ const SideNav = ({onClick}) => {
 
       <ul className='sidenav-items'>
         <li><NavLink  onClick={onClick} className='navLink' to={"/"}>Home</NavLink></li>
-        <li><NavLink   onClick={onClick} className='navLink' to={"accomodation"}>Accomodation</NavLink></li>
         <li className='sub-menu' onClick={openSubMenu}> 
-          Rooms <BiChevronDown/>
+          <div className='sub-menu_heading'>our Rooms <BiChevronDown/> </div>
           {open && 
           <ul>  
             <li> <NavLink  onClick={onClick} className='navLink' to={"rooms/standard-room"}>standard room</NavLink> </li>
             <li> <NavLink  onClick={onClick} className='navLink' to={"rooms/delux"}>delux</NavLink> </li>
             <li> <NavLink  onClick={onClick} className='navLink' to={"rooms/double-delux"}>double delux</NavLink> </li>
             <li> <NavLink  onClick={onClick} className='navLink' to={"rooms/suite"}>suite</NavLink> </li>
-            <li> <NavLink  onClick={onClick} className='navLink' to={"rooms/executive-suite"}>executive-suite</NavLink> </li>
+            <li> <NavLink  onClick={onClick} className='navLink' to={"rooms/executive-suite"}>executive suite</NavLink> </li>
           </ul>
           }
         </li>
         <li><NavLink onClick={onClick} className='navLink' to={"gallery"}> Gallery</NavLink></li>
+        <li><NavLink onClick={onClick} className='navLink' to={"meetings"}> meetings & events</NavLink></li>
         <li><NavLink onClick={onClick} className='navLink' to={"Contact"}>Contact us</NavLink></li>
         <li><NavLink onClick={onClick} className='navLink' to={"about"}>About us</NavLink></li>
       </ul>

@@ -1,0 +1,35 @@
+.topnav_ul{
+    display: flex;
+    padding: 0 16px;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+}
+.topnav_ul li{
+    color: black;
+}
+.nav-link{
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.dropdown-menu{
+    position: relative;
+}
+.dropdown-heading{
+    color: black;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.dropdown-menu_items{
+    height: auto;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    bottom: -1;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    background-color: white;
+}

@@ -19,7 +19,7 @@ const Visit = () => {
           <img src="" alt="" />
             <h2>Dodoma archives</h2>
         </div>
-    </div>
+      </div>
     </div>
   )
 }

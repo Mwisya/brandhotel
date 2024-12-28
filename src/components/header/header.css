@@ -12,33 +12,6 @@ header{
     left: 0;
     z-index: 900;
 }
-.logo{
-    width: max-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-}
-.logo i{
-    width: 50px;
-    height: 50px;
-    background-color: lightblue;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-.logo h4{
-    padding: 2px 0;
-    border-bottom: 2px solid black;
-    color: #191919;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-.logo p{
-    color: black;
-}
 
  header svg{
     color: black;
@@ -53,11 +26,7 @@ header{
 .topnav{
     display: none;
 }
-.topnav a{
-    text-transform: uppercase;
-    color: black;
-    letter-spacing: 1px;
-}
+
 
 @media screen and (min-width:1024px) {
     header{
@@ -76,9 +45,6 @@ header{
         flex-direction: row;
         justify-content: flex-end;
         gap: 24px;
-        color: black;
     }
-    .topnav li{
-        text-transform: uppercase;
-    }
+   
 }

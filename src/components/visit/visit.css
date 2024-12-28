@@ -24,21 +24,22 @@
     align-items: center;
     justify-content: flex-start;
     overflow-x: scroll;
+    scroll-snap-type: x proximity;
  
 }
 .visit-wrapper::-webkit-scrollbar{
     display: none;
 }
-/* apply snap */
+
 .visit-item{
     width: min(100%, 425px);
     display: flex;
-    gap: 16px;
+    gap: 8px;
     justify-content: flex-start;
     flex-shrink: 0;
     position: relative;
     background-color: #fff;
-    scroll-snap-type: x proximity;
+    scroll-snap-align: start;
 }
 
 .visit-item img{
@@ -58,13 +59,14 @@
 
 @media screen and (min-width:425px) {
     .visit-wrapper{
-        gap: 16px;
+        gap: 8px;
         align-items: center;
     }
   
 }
 @media screen and (min-width:1024px) {
     .visit-wrapper{
+        gap: 16px;
         justify-content: center;
     }
   

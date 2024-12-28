@@ -1,4 +1,4 @@
-import {createContext, useContext, useState} from "react";
+import {createContext, useContext} from "react";
 import {MdAir, MdCoffeeMaker, MdCurtains, MdOutlineBed, MdOutlineRoomService, MdRoomPreferences, MdTv } from 'react-icons/md'
 import { FaShower, FaTv, FaWifi } from 'react-icons/fa'
 import standardroom from '../assets/roomTypes/standardroom.jpg'
@@ -142,7 +142,7 @@ const doubleDeluxRoom = {
     {icon:<FaWifi/>,title:'Wi-fi'},
   ],
   desc: 'Make yourself at home in our tastefully designed room. Perfect for long stay guests and families. This moderm room offers all the comforts of home and spectacular view',
-  price:'100 000',
+  price:'150 000',
   allAmenities:[
     {icon:<MdRoomPreferences/>,title:'Spacious room'},
     {icon:<MdOutlineBed/>,title:'King sized bed'},
@@ -167,7 +167,7 @@ const suiteRoom =   {
     {icon:<FaWifi/>,title:'Wi-fi'},
   ],
   desc: 'Make yourself at home in our tastefully designed room. Perfect for long stay guests and families. This moderm room offers all the comforts of home and spectacular view',
-  price:'120 000',
+  price:'180 000',
   allAmenities:[
     {icon:<MdRoomPreferences/>,title:'Spacious room'},
     {icon:<MdOutlineBed/>,title:'King sized bed'},
@@ -192,7 +192,7 @@ const executivesuiteRoom =  {
     {icon:<FaWifi/>,title:'Wi-fi'},
   ],
     desc: 'Make yourself at home in our tastefully designed room. Perfect for long stay guests and families. This moderm room offers all the comforts of home and spectacular view',
-    price: '150 000',
+    price: '200 000',
     allAmenities:[
       {icon:<MdRoomPreferences/>,title:'Spacious room'},
       {icon:<MdOutlineBed/>,title:'King sized bed'},
@@ -316,10 +316,9 @@ const meetingsGallery = meetings
 
 export const RoomsContext = createContext();
 export const RoomsProvider = ({children}) => {
-  const [roomsType, setRoomsType] = useState(roomsList)
-  const [rooms, setRooms] = useState(accomodation)
+  
     return(
-      <RoomsContext.Provider value={{roomsType, standardRoom, deluxRoom,doubleDeluxRoom, suiteRoom, executivesuiteRoom, roomsGallery, facilityGallery, restaurantGallery, meetingsGallery}}>
+      <RoomsContext.Provider value={{ roomsList, accomodation, standardRoom, deluxRoom,doubleDeluxRoom, suiteRoom, executivesuiteRoom, roomsGallery, facilityGallery, restaurantGallery, meetingsGallery}}>
             {children}
       </RoomsContext.Provider>
     )
