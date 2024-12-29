@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/brandhotel/static/css/main.3f6e7d09.css",
-    "main.js": "/brandhotel/static/js/main.8f799e94.js",
+    "main.css": "/brandhotel/static/css/main.e61b941f.css",
+    "main.js": "/brandhotel/static/js/main.730c113b.js",
     "static/js/453.b651113b.chunk.js": "/brandhotel/static/js/453.b651113b.chunk.js",
     "static/media/facility2.jpg": "/brandhotel/static/media/facility2.bbdc6696fcc15d0c3ee1.jpg",
     "static/media/hallway.jpg": "/brandhotel/static/media/hallway.bbdc6696fcc15d0c3ee1.jpg",
@@ -33,12 +33,12 @@
     "static/media/meeting4.jpg": "/brandhotel/static/media/meeting4.89f5e37425675c724a31.jpg",
     "static/media/meeting3.jpg": "/brandhotel/static/media/meeting3.1a31a1d331b016a01a32.jpg",
     "index.html": "/brandhotel/index.html",
-    "main.3f6e7d09.css.map": "/brandhotel/static/css/main.3f6e7d09.css.map",
-    "main.8f799e94.js.map": "/brandhotel/static/js/main.8f799e94.js.map",
+    "main.e61b941f.css.map": "/brandhotel/static/css/main.e61b941f.css.map",
+    "main.730c113b.js.map": "/brandhotel/static/js/main.730c113b.js.map",
     "453.b651113b.chunk.js.map": "/brandhotel/static/js/453.b651113b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f6e7d09.css",
-    "static/js/main.8f799e94.js"
+    "static/css/main.e61b941f.css",
+    "static/js/main.730c113b.js"
   ]
 }
