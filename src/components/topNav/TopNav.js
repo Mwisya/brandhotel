@@ -18,8 +18,8 @@ const TopNav = ({onClick}) => {
             <div className='dropdown-heading' onClick={openSubMenu}>Rooms</div>
             { open ? 
             <ul className='dropdown-menu_items'  onClick={closeDropDown}>  
-            <li><NavLink className='nav-link' to={'standard'}>standard</NavLink></li>
-            <li><NavLink className='nav-link' to={'delux'}>delux</NavLink></li>
+            <li><NavLink className='nav-link' to={'standard-room'}>standard</NavLink></li>
+            <li><NavLink className='nav-link' to={'delux-room'}>delux</NavLink></li>
             <li><NavLink className='nav-link' to={'double-delux'}>double delux</NavLink></li>
             <li><NavLink className='nav-link' to={'suite'}>suite</NavLink></li>
             <li><NavLink className='nav-link' to={'executive-suite'}>executive suite</NavLink></li>

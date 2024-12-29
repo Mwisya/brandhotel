@@ -9,7 +9,7 @@ import executivesuite from '../assets/roomTypes/executivesuite.jpg'
 import { BiSolidDryer } from "react-icons/bi";
 import { facility, meetings, restaurant } from "../assets/gallery/galleryImages";
 
-const roomsList = [
+const roomsType = [
     {
       image: standardroom,
       name: 'standard  room',
@@ -318,7 +318,7 @@ export const RoomsContext = createContext();
 export const RoomsProvider = ({children}) => {
   
     return(
-      <RoomsContext.Provider value={{ roomsList, accomodation, standardRoom, deluxRoom,doubleDeluxRoom, suiteRoom, executivesuiteRoom, roomsGallery, facilityGallery, restaurantGallery, meetingsGallery}}>
+      <RoomsContext.Provider value={{ roomsType, accomodation, standardRoom, deluxRoom,doubleDeluxRoom, suiteRoom, executivesuiteRoom, roomsGallery, facilityGallery, restaurantGallery, meetingsGallery}}>
             {children}
       </RoomsContext.Provider>
     )

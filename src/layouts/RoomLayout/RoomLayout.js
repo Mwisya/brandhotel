@@ -1,7 +1,7 @@
 import React from 'react'
 import './roomLayout.css'
 import { BsTelephone } from 'react-icons/bs'
-// import { RoomGallerySlider } from '../../components';
+import { RoomGallerySlider } from '../../components';
 
 const RoomLayout = ({room}) => {
   const amenitieslist = room.allAmenities;
@@ -57,7 +57,7 @@ const RoomLayout = ({room}) => {
           </div>
           </div>
         </section>
-        {/* <section className='room-gallery'><RoomGallerySlider/></section> */}
+        <section className='room-gallery'><RoomGallerySlider/></section>
     </main>
   )
 }
