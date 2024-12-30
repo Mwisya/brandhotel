@@ -1,7 +1,6 @@
 import React from 'react'
 import './roomLayout.css'
 import { BsTelephone } from 'react-icons/bs'
-import { RoomGallerySlider } from '../../components';
 
 const RoomLayout = ({room}) => {
   const amenitieslist = room.allAmenities;
@@ -57,7 +56,20 @@ const RoomLayout = ({room}) => {
           </div>
           </div>
         </section>
-        <section className='room-gallery'><RoomGallerySlider/></section>
+        <section className='room-gallery-container'>
+          <h1>Gallery</h1>
+          <div className='room-gallery'>
+            {
+              room.images.map((image, index)=>{
+                return(
+                <div key={index}>
+                  <img src={image} alt="" />
+                </div>
+                )
+              })
+            }
+          </div>      
+        </section>
     </main>
   )
 }

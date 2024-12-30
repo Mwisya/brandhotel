@@ -19,10 +19,10 @@ import familygraduation from '../brandhotel/slides/familygraduation.jpg'
      title:'Swimming pool'
     },
     {image:walkway,
-     title:'Be at the best'
+     title:'perfect gateway'
     },
     {image:conference,
-     title:'Meetings'
+     title:'Meetings & events'
     },
     {image:blueroom,
      title:'Stay in style'

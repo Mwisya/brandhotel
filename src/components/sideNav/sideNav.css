@@ -1,7 +1,7 @@
 .sidenav{
     height: 100vh;
     width: 100%;
-    background-color: white ;
+    background-color:  #02102a;
     position: absolute;
     left: 0;
     top: 0;
@@ -24,21 +24,28 @@
 .close-nav{
     position: absolute;
     right: 16px;
-    top: 16px;
+    top: 64px;
     font-size: 32px;
-    color: black;
+    color: white;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    & svg{
+        color: whitesmoke;
+    }
 }
 .sidenav-logo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-  }
+    margin: 16px 0 8px;
+}
+.sidenav-logo h3{
+    color: white;
+    font-weight: 500;
+    letter-spacing: 4px;
+    margin-top: 4px;
+
+}
 .sidenav-logo i{
     width: 50px;
     height: 50px;
@@ -49,29 +56,24 @@
     justify-content: center;
     overflow: hidden;
 }
-.sidenav-logo h3{
-    color: black;
-    letter-spacing: 6px;
-    text-transform: uppercase;
-    font-weight: 500;
-}
+
 .sidenav-items{
    width: 100%;
-   text-align: start;
    margin: 0 auto;
    display: flex;
    flex-direction: column;
+   align-items: center;
 }
 .sidenav-items li {
-    color: black;
+    color: white;
     text-transform: capitalize;
     font-size: 22px;
     padding: 6px 16px;
 }
 .sidenav-items li .navLink{
-    color: black;
+    color: white;
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 400;
 }
 .sub-menu{
     height: auto;
@@ -87,8 +89,8 @@
 }
 
 .sub-menu ul li{
-    padding: 8px 0;
     text-transform: capitalize;
+    color: whitesmoke;
 }
 .sub-menu ul li:hover{
     color: goldenrod;

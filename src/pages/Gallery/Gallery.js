@@ -8,7 +8,7 @@ const Gallery = () => {
   const title = "Gallery"
 
   return (
-    <main className='gallery'>
+    <main>
       <Display title={title} image={hall.image}/>
       <nav className='gallery-nav'>
         <NavLink className='gallery-nav_link' end to="gallery">rooms</NavLink>

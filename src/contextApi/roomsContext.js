@@ -8,6 +8,7 @@ import suite from '../assets/roomTypes/executivesuite.jpg'
 import executivesuite from '../assets/roomTypes/executivesuite.jpg'
 import { BiSolidDryer } from "react-icons/bi";
 import { facility, meetings, restaurant } from "../assets/gallery/galleryImages";
+import { deluxe, executiveSuite, standard, suiteGallery } from "../assets/roomTypes/roomTypeImage";
 
 const roomsType = [
     {
@@ -104,8 +105,7 @@ const standardRoom = {
     {icon:<MdCurtains/>,title:'Black out curtains'},
     {icon:<MdAir/>,title:'air conditioning'},
   ],
-  image1:delux,
-  image2: doubledelux,
+  images: standard,
   link: 'rooms/standard-room'
 }
 const deluxRoom = {
@@ -129,8 +129,7 @@ const deluxRoom = {
     {icon:<MdCurtains/>,title:'Black out curtains'},
     {icon:<MdAir/>,title:'air conditioning'},
   ],
-  image1: standardroom,
-  image2: doubledelux,
+  images: deluxe,
   link: 'rooms/delux'
 }
 const doubleDeluxRoom = {
@@ -154,8 +153,7 @@ const doubleDeluxRoom = {
     {icon:<MdCurtains/>,title:'Black out curtains'},
     {icon:<MdAir/>,title:'air conditioning'},
   ],
-  image1:suite,
-  image2:executivesuite,
+  images:deluxe,
   link: 'rooms/double-delux'
 }
 const suiteRoom =   {
@@ -179,8 +177,7 @@ const suiteRoom =   {
     {icon:<MdCurtains/>,title:'Black out curtains'},
     {icon:<MdAir/>,title:'air conditioning'},
   ],
-  image1: doubledelux,
-  image2: executivesuite,
+  images: suiteGallery,
   link: 'rooms/suite'
 }
 const executivesuiteRoom =  {
@@ -204,8 +201,7 @@ const executivesuiteRoom =  {
       {icon:<MdCurtains/>,title:'Black out curtains'},
       {icon:<MdAir/>,title:'air conditioning'},
     ],
-    image1: doubleDeluxRoom,
-    image2: suite,
+    images: executiveSuite,
     link: 'rooms/executive-suite'
 }
 

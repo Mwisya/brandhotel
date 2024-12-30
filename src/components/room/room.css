@@ -18,9 +18,10 @@
 }
 .room-type{
     margin: 0;
-    font-weight: 400;
+    font-weight: 500;
     text-transform: capitalize;
     border: 0;
+    text-wrap: nowrap;
 }
 .room-desc{
     height: min(auto, 130px);
@@ -29,7 +30,7 @@
 }
 .amenities-heading{
     color: black;
-    font-weight: 400;
+    font-weight: 500;
 }
 .amenities-container{
     width: 100%;
@@ -47,6 +48,8 @@
 }
 .amenities-container li i{
     font-size: 30px; 
+    color: #F27300;
+
 }
 .amenities-container li h4{
     font-weight: 400;
