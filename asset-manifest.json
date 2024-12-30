@@ -1,8 +1,22 @@
 {
   "files": {
-    "main.css": "/brandhotel/static/css/main.e61b941f.css",
-    "main.js": "/brandhotel/static/js/main.730c113b.js",
-    "static/js/453.b651113b.chunk.js": "/brandhotel/static/js/453.b651113b.chunk.js",
+    "main.css": "/brandhotel/static/css/main.56a0c54f.css",
+    "main.js": "/brandhotel/static/js/main.943c3798.js",
+    "static/js/453.35e1c54f.chunk.js": "/brandhotel/static/js/453.35e1c54f.chunk.js",
+    "static/media/delux_9924.jpg": "/brandhotel/static/media/delux_9924.3e854919d071ef52093a.jpg",
+    "static/media/delux_9918.jpg": "/brandhotel/static/media/delux_9918.1f139fa839d5ef8ca92d.jpg",
+    "static/media/delux_9914.jpg": "/brandhotel/static/media/delux_9914.d0455eaa72aac80a171f.jpg",
+    "static/media/executive_9956.jpg": "/brandhotel/static/media/executive_9956.b739f53d91436581c59b.jpg",
+    "static/media/executive_9941.jpg": "/brandhotel/static/media/executive_9941.eb85d53ee617993a02d6.jpg",
+    "static/media/executive_9946.jpg": "/brandhotel/static/media/executive_9946.265853be0e1b94da9941.jpg",
+    "static/media/suite_9925.jpg": "/brandhotel/static/media/suite_9925.a35429fb1182fe336f67.jpg",
+    "static/media/delux_9917.jpg": "/brandhotel/static/media/delux_9917.30c4339112f8b3fc1910.jpg",
+    "static/media/suite_9937.jpg": "/brandhotel/static/media/suite_9937.e9eb872248b92c3ac360.jpg",
+    "static/media/standard_9926.jpg": "/brandhotel/static/media/standard_9926.2ef8aaf0df0d55608158.jpg",
+    "static/media/delux_9889.jpg": "/brandhotel/static/media/delux_9889.6f3862ac817360e9be01.jpg",
+    "static/media/standard_9874.jpg": "/brandhotel/static/media/standard_9874.7b93f8f3f498ad2aa70f.jpg",
+    "static/media/standard_9877.jpg": "/brandhotel/static/media/standard_9877.b8ca2f71b5a6d70cb2b0.jpg",
+    "static/media/standard_9905.jpg": "/brandhotel/static/media/standard_9905.16b60f179ed2775b8903.jpg",
     "static/media/facility2.jpg": "/brandhotel/static/media/facility2.bbdc6696fcc15d0c3ee1.jpg",
     "static/media/hallway.jpg": "/brandhotel/static/media/hallway.bbdc6696fcc15d0c3ee1.jpg",
     "static/media/cocktail.jpg": "/brandhotel/static/media/cocktail.947737edd9c68c0fde4c.jpg",
@@ -33,12 +47,12 @@
     "static/media/meeting4.jpg": "/brandhotel/static/media/meeting4.89f5e37425675c724a31.jpg",
     "static/media/meeting3.jpg": "/brandhotel/static/media/meeting3.1a31a1d331b016a01a32.jpg",
     "index.html": "/brandhotel/index.html",
-    "main.e61b941f.css.map": "/brandhotel/static/css/main.e61b941f.css.map",
-    "main.730c113b.js.map": "/brandhotel/static/js/main.730c113b.js.map",
-    "453.b651113b.chunk.js.map": "/brandhotel/static/js/453.b651113b.chunk.js.map"
+    "main.56a0c54f.css.map": "/brandhotel/static/css/main.56a0c54f.css.map",
+    "main.943c3798.js.map": "/brandhotel/static/js/main.943c3798.js.map",
+    "453.35e1c54f.chunk.js.map": "/brandhotel/static/js/453.35e1c54f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e61b941f.css",
-    "static/js/main.730c113b.js"
+    "static/css/main.56a0c54f.css",
+    "static/js/main.943c3798.js"
   ]
 }
