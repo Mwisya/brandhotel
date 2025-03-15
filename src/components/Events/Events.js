@@ -1,7 +1,6 @@
 import React from 'react'
 import './events.css'
-import { meetings, meetingAmenities } from '../../data/data'
-import { MdOutlineEmail, MdPhone, MdWhatsapp } from 'react-icons/md'
+import { MdOutlineEmail, MdPhone } from 'react-icons/md'
 
 const Events = ({halls, amenities }) => {
   return (

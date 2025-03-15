@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react'
 import './carousel.css'
-import {slides} from '../../data/data'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa6'
  
 

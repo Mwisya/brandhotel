@@ -1,8 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import './hotelServices.css'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa6'
-import { MdHotel, MdLocalHotel, MdOutlineBed, MdOutlineRestaurant } from 'react-icons/md'
-import { FaWineBottle } from 'react-icons/fa'
+import { MdLocalHotel, MdOutlineRestaurant } from 'react-icons/md'
 import { BsProjector } from 'react-icons/bs'
 
 const HotelServices = ({data}) => {
