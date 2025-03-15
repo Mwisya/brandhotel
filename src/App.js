@@ -19,7 +19,7 @@ function App() {
       <Wrapper>
         <Header/>
         <Routes>
-          <Route index path='/' element={<Home/>}/>
+          <Route index path='/brandhotel' element={<Home/>}/>
           <Route path='rooms' element={<RoomsPage/>}>
             <Route path='deluxe' element={<Delux/>}/>
             <Route path='double-deluxe' element={<DoubleDelux/>}/>
