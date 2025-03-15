@@ -18,8 +18,8 @@ function App() {
     <div className='app'>
       <Wrapper>
         <Header/>
-        <Routes>
-          <Route index path='/' element={<Home/>}/>
+        <Routes basename='/'>
+          <Route path='/' element={<Home/>}/>
           <Route path='rooms' element={<RoomsPage/>}>
             <Route path='deluxe' element={<Delux/>}/>
             <Route path='double-deluxe' element={<DoubleDelux/>}/>
