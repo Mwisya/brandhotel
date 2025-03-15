@@ -1,16 +1,15 @@
 import React from 'react'
-import {About, Display, Experiences, NewsLetter } from '../../components'
-import { fac } from '../../data/data'
+import {About, Display, Map } from '../../components'
+import facility3 from '../../assets/gallery/facility3.jpg'
 
 
 const AboutUs = () => {
   const title = 'About us'
   return (
     <main>
-      <Display title={title} image={fac.image}/>
+      <Display title={title} image={facility3}/>
       <About/>
-      <Experiences/>
-      <NewsLetter/>
+      <Map/>
     </main>
   )
 }

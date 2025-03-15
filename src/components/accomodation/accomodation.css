@@ -24,15 +24,13 @@
     display: flex;
     align-items: center;
 }
-.accomodation h1{
+.accomodation h2{
     width: max-content;
     text-align: center;
-    font-weight: 400;
+    font-weight: 500;
     margin: 32px 0 64px;
     text-align: center;
     text-transform: capitalize;
-    padding-bottom: 5px;
-    border-bottom: 3px red solid;
 }
 .grid{
     display: flex;

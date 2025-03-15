@@ -1,51 +1,52 @@
 import React, {useState} from 'react'
 import './galleryLayout.css'
-import { BsArrowLeft, BsArrowRight } from 'react-icons/bs'
+import { MdClose } from 'react-icons/md'
 
 
 const GalleryLayout = ({gallery}) => {
-  const [currentImage, setCurrentImage] = useState(0)
-  const slidesLength = gallery.length
-  const nextSlide = () => {
-    setCurrentImage( currentImage === slidesLength - 1 ? 0 : currentImage + 1)
-  }
-  const prevSlide = () => {
-    setCurrentImage( currentImage === 0 ? slidesLength - 1 : currentImage - 1)
-  }
-  
+  const[openModal, setOpenModal]= useState(false)
+  const[file, setFile]= useState(0)
+  const open = () => {setOpenModal(true)}
+  const close = () => {setOpenModal(false)}
+
   return (
-    <section className='gallery-container'>
+    <section className='gallery'>
       <div className='gallery-content'>
-        <div className='image-preview'>
-          <img src={gallery[currentImage]} alt="" /> 
-          <BsArrowLeft className='arrow prev' onClick={prevSlide}/>
-          <BsArrowRight className='arrow next' onClick={nextSlide}/>
-        </div>
-
-        <div className='images-items'>
-        
-          <div className='image-item'>
-            <img src={gallery[0]} alt="" onClick={(e)=> setCurrentImage(0)}  />   
-          </div>
-          <div className='image-item'>
-            <img src={gallery[0]} alt="" onClick={(e)=> setCurrentImage(0)}  />   
-          </div>
-          <div className='image-item'>
-            <img src={gallery[1]} alt="" onClick={(e)=> setCurrentImage(1)} />   
-          </div>
-          <div className='image-item'>
-            <img src={gallery[2]} alt="" onClick={(e)=> setCurrentImage(2)}  />   
-          </div>
-          <div className='image-item'>
-            <img src={gallery[3]} alt="" onClick={(e)=> setCurrentImage(3)} />   
-          </div>
-          <div className='image-item'>
-            <img src={gallery[4]} alt="" onClick={(e)=> setCurrentImage(4)}  />   
-          </div>
-
-        </div>
-
+        {
+          gallery.map((image, index)=>{
+            return(
+            <div className='image-container' onClick={()=> setFile(image)}  key={index}>
+              <img src={image} alt="" onClick={open}/>   
+            </div>
+            
+            ) 
+          })
+        }
       </div>
+      {
+      openModal &&
+      <div className='gallery-modal' >
+        <i className='close-modal' onClick={close}><MdClose/></i>
+
+        <div className='gallery-modal-content'>
+          <div className='gallery-modal-image'>
+            <img src={file}  alt="" /> 
+          </div>
+          <div className='gallery-images-wrapper'>
+            {
+              gallery.map((img,index)=>{
+                return(
+                  <div key={index} onClick={()=>{ setFile( img) }}>
+                    <img src={img} alt=""/>
+                  </div>
+                )
+              })
+            }
+          </div>
+         
+        </div>
+      </div>
+      }
     </section>
   )
 }

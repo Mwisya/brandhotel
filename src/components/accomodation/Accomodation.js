@@ -22,7 +22,7 @@ const Accomodation = () => {
   return (
     <section className='accomodation-container'>
       <div className='accomodation'>
-        <h1>our rooms</h1>
+        {/* <h2>our rooms</h2> */}
         <div className='grid'>
           {
             accomodation.map((room, index)=>{

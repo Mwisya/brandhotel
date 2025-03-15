@@ -32,7 +32,7 @@
 }
 
 .visit-item{
-    width: min(100%, 425px);
+    width: min(80%, 425px);
     display: flex;
     gap: 8px;
     justify-content: flex-start;

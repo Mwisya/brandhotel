@@ -16,12 +16,14 @@ const Header = () => {
   }
   return (
     <header>
-      <Logo/>
+      <div className='header-logo'><Logo/></div>
 
       { toggleNav ? <SideNav onClick={close}/>  : null  }
-      <div className='menu-bar' onClick={open}><MdMenu/></div>
 
-      <nav className='topnav'> <TopNav onClick={close}/> </nav>
+
+      <div className='header-topnav'> <TopNav/> </div>
+      
+      <i className='menu-bar' onClick={open}><MdMenu/></i>
     </header>
   )
 }

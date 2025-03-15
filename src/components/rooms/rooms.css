@@ -1,32 +1,41 @@
 .rooms{
     width: 100%;
-    padding: 32px 8px 120px;
+    padding: 16px 8px 0;
+    margin: 64px auto  120px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f8f8f4;
-
 }
 .rooms-heading{
-    padding: 24px 16px 40px;
+    padding-bottom: 24px;
+    margin-bottom: 48px;
     font-weight: 500;
-    text-transform: capitalize;
     text-align: center;
-    font-size: 32px;
-    text-wrap: nowrap;
+    text-transform: uppercase;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.rooms-heading::after{
+    content: "";
+    width: 64px;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%, 50%);
 }
 .rooms-wrapper{
     width: 100%;
     display: flex;
-    gap: 16px;
     flex-wrap: wrap;
     justify-content: center;
-    row-gap: 100px;
-    column-gap: 60px;
+    gap: 132px;
 }
 
 @media screen and (min-width:1024px) {
     .rooms-wrapper{
         width: 95%;
+       
     }
 }

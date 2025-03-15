@@ -1,40 +1,45 @@
-import React,{useState} from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react'
+import GalleryLayout from '../../layouts/GalleryLayout/GalleryLayout'
 import './gallery.css'
-import { images } from '../../data/data'
-import { MdClose } from 'react-icons/md'
+// import RoomsGallery from './RoomsGallery'
+// import MeetingAndEventsGallery from './MeetingAndEventsGallery'
+// import RestaurantGallery from './RestaurantGallery'
+// import FacilityGallery from './FacilityGallery'
 
-const Gallery = () => {
-  const [file, setFile] = useState(null)
+const Gallery = ({gallery}) => {
+  const[active, setActive]=React.useState('rooms')
 
-  const data  = images.slice(0, 5)
+  // switch (key) {
+  //   case value:
+      
+  //     break;
+  //   case value:
+      
+  //     break;
+  //   case value:
+      
+  //     break;
+  //   case value:
+      
+  //     break;
+  
+  //   default:
+  //     break;
+  // }
+ 
   return (
     <section className='gallery'>
-      <div className='gallery-wrapper'>
-        <h1>Explore Gallery</h1>
-        <ul className='gallery_items'>
-          {
-            data.map((file, index)=>{
-              return(
-                <li key={index} onClick={()=> setFile(file)}><img src={file.url} alt="" /></li>
-              )
-            })
-          }
-        
-          <li className='link'>
-            <Link className='to_gallery' to={'/gallery'}>View gallery</Link>
-          </li>
-        </ul>
-
-        { file ? 
-      <div className='modal'>
-        <MdClose className='close' onClick={()=> setFile(null)}/>
-        <div className='modal-image'>
-            <img src={file?.url} alt="" />
-        </div>
-      </div> : null }
-
-      </div>  
+      <div className='gallery-navigation'>
+        <button className='gallery-btn' onClick={()=>setActive('rooms')}>rooms</button>
+        <button className='gallery-btn' onClick={()=>setActive('faciity')}>facility</button>
+        <button className='gallery-btn' onClick={()=>setActive('restaurant')}>restaurant</button>
+        <button className='gallery-btn' onClick={()=>setActive('meetings')}>meetings & events</button>
+      </div>
+      {/* <div className='gallery-content'></div> */}
+      {active === 'rooms' && <GalleryLayout gallery={gallery.rooms} index = '0' /> }
+      {/* {active === 'facility' && <GalleryLayout gallery={gallery} index = '1'  /> }
+      {active === 'restaurant' && <GalleryLayout  index = '2'  /> }
+      {active === 'meetings' && <GalleryLayout index = '3' /> } */}
     </section>
   )
 }

@@ -4,10 +4,11 @@
     color: white;
 }
 .about-wrapper{
-    padding: 16px 16px 64px;
+    padding: 48px 16px 64px;
     margin: 0 auto;
-    width: min(900px, 100%);
-    display: block;
+    width: 100%;
+    display: grid;
+    gap: 16px;
 }
 
 .about-content{
@@ -18,13 +19,12 @@
 @media screen and (min-width:768px) {
     .about-wrapper{
         width: 90%;
-        margin: 0 auto;
     }
     
 }
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1220px) {
     .about-wrapper{
-        width: 800px;
+        width: 1024px;
     }
 }
 

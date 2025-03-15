@@ -1,22 +1,17 @@
 import React from 'react'
 import './Meetings.css'
 import { Display, Events, Introduction} from '../../components'
-import { conferenceroom } from '../../data/data'
+import { useRoomsContext } from '../../contextApi/roomsContext'
 
 const Meetings = () => {
-  const title = 'meetings'
-  const overview = {
-    heading:'Do it in style and comfort',
-    content:'   Plan your next Conference, Meeting, Graduation ceremonies, Party or family Get together at our facility. We are equiped to make sure all your need and wants are all met to make any activity a success. Our facility is capabile of catering to large group be it a conference or meeting. We delivery unique curlinary experience to our guest not forgetting affordable rooms for  your desired accomadation from Standard rooms to Executive Suite rooms'
-
-  }
-  
-  
+  const {meetingsData } = useRoomsContext()
+  const {title, displayImage, heading, content, halls, amenities} = meetingsData
+ 
   return (
     <main className='meetings'>
-        <Display title={title} image={conferenceroom.image}/>
-        <Introduction overview={overview}/>
-        <Events/>
+      <Display title={title} image={displayImage}/>
+      <Introduction overview={content}/>
+      <Events heading={heading} halls={halls} amenities={amenities}/>
     </main>
   )
 }

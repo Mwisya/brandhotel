@@ -1,7 +1,5 @@
 header{
-    width: 100%;
-    padding: 16px;
-    color: white;
+    padding: 16px 16px;
     background-color: #fff;
     display: flex;
     justify-content: space-between;
@@ -10,12 +8,16 @@ header{
     position: sticky;
     top: 0;
     left: 0;
-    z-index: 900;
+    z-index: 500;
 }
 
  header svg{
     color: black;
     font-size: 32px;
+}
+
+.header-logo{
+    width: auto;
 }
 .menu-bar{
     width: max-content;
@@ -23,28 +25,26 @@ header{
     justify-content: flex-end;
 }
 
-.topnav{
+.header-topnav{
     display: none;
 }
 
 
 @media screen and (min-width:1024px) {
-    header{
-        padding: 16px 20px;
-    }
     .sidenav{
         display: none;
     }
     .menu-bar{
         display: none;
     }
-    .topnav{
-        width: 100%;
+    .header-topnav{
+        width: 80%;
         display: contents;
+        height: 100%;
+        width: max-content;
         display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        gap: 24px;
+        align-items: center;
+
     }
-   
+    
 }

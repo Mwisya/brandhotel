@@ -6,7 +6,7 @@ import Room from '../room/Room'
 const Rooms = ({rooms}) => {
   return ( 
     <section className='rooms'>
-      <h1 className='rooms-heading'>Our accomodation</h1>
+      <h2 className='rooms-heading'>Rooms & Suites</h2>
       <div className='rooms-wrapper'>
         {
           rooms.map((room, index)=>{

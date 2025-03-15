@@ -6,7 +6,13 @@ const About = () => {
     <section className='about'>
       <div className='about-wrapper'>
         <p className='about-content'>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa reiciendis vitae reprehenderit, cumque velit maxime? Ea alias, dolores, deleniti culpa cupiditate magnam repudiandae quae sint officiis laudantium perspiciatis, esse harum?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae repellat unde ipsa totam? Inventore hic, natus pariatur assumenda at vel quibusdam perspiciatis tempore dicta consequuntur, similique tempora voluptate error voluptas. Dolore ut dolor, sed, quasi velit possimus error, beatae nobis labore doloribus magnam in quis deserunt ipsa sapiente laboriosam quibusdam enim quos consequuntur id tempora reiciendis recusandae voluptas earum! Sunt autem adipisci consequatur architecto laudantium deleniti alias harum laborum molestias, blanditiis aut a quidem distinctio iure voluptatum magni assumenda magnam ipsum voluptate itaque. Assumenda laudantium corrupti ducimus! Fugit rem, ea repellat quia repellendus cumque aut reiciendis totam voluptas corrupti sunt?
+        Welcome to Brand Hotel Dodoma. Conveniently located in Kisasa along Kisasa road  a few minutes from the city center. Brand hotel is an ultimate gateway for your accomodation, restaurant & lounge and formally for meetings and events services. We take pride in offering exceptional hospitality service delivery and contentment of your travel, official and vacation demands.
+        </p>
+        <p className='about-content'>
+        Our  accommodation services varying from Standard rooms to executive suites,  exceptionally furnished to ensure your stay is pleasant, appealing and inviting as preferred. Our rooms and suites are  deliberately intended to make you feel at home with each hospitality detail paid attention to.  Furnished with the best modern amenities, they surely offer you privacy,  tranquility, comfort and ambiance at a go.
+        </p>
+        <p className='about-content'>
+        Delight your taste buds in tasteful  breakfast and other meals of the day at our restaurant with local and international delicacies.  Make your special order from a well-considered menu with  array of splendid cuisines.  As you prefer savor your meals in the restaurant or in the garden while relishing amazing views. Additionally, our state-of-art bar  stocked with drinks from  local and international brands makes  your stay or visit complete and as desired. 
         </p>
       </div>
     </section>

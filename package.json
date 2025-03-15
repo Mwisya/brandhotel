@@ -1,5 +1,5 @@
 {
-  "homepage":"https://mwisya.github.io/brandhotel",
+  "homepage": "https://mwisya.github.io/brandhotel",
   "name": "brandhotel",
   "version": "0.1.0",
   "private": true,
@@ -11,6 +11,7 @@
     "react": "^18.3.1",
     "react-calendar": "^5.1.0",
     "react-dom": "^18.3.1",
+    "react-helmet": "^6.1.0",
     "react-icons": "^5.3.0",
     "react-router-dom": "^6.28.0",
     "react-scripts": "5.0.1",
@@ -18,8 +19,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

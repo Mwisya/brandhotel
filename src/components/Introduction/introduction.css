@@ -5,40 +5,31 @@
 }
 .intro-wrapper{
     width: 100%;
-    padding: 16px 16px 64px;
+    padding: 48px 16px 64px;
     margin: 0 auto;
 }
-.intro-wrapper .intro-heading{
-    margin: 24px auto 16px;
-    text-align: center;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    font-weight: 400;
-}
+
 .intro-content{
     line-height: 30px;
-    text-align: center;
+    text-align: start;
 }
 
 @media screen and (min-width:768px) {
     .intro-wrapper{
-        width: 90%;
+        width: 95%;
         margin: 0 auto;
     }
 }
 
 @media screen and (min-width:1024px) {
     .intro-wrapper{
-        width: 80%;
-    }
-    .intro-heading{
-        font-size: 32px;
+        width: 95%;
     }
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1220px) {
     .intro-wrapper{
-        width: 60%;
+        width: 55%;
     }
    
 }

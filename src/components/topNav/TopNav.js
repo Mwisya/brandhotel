@@ -1,34 +1,30 @@
-import React, {useState} from 'react'
-import { NavLink } from 'react-router-dom'
+import React from 'react'
+import { Link } from 'react-router-dom'
 import './topNav.css'
+import { BiChevronDown } from 'react-icons/bi'
 
-const TopNav = ({onClick}) => {
-    const [open, setOpen] = useState(false)
-    function openSubMenu() {
-      setOpen(true)
-    }
-    function closeDropDown() {
-        setOpen(false)
-      }
+const TopNav = () => {
   return (
-    <ul className='topnav'>
-        <li><NavLink className='nav-link' to={'/'}>Home</NavLink></li>
-        <li><NavLink className='nav-link' to={'gallery'}>gallery</NavLink></li>
-        <li className='dropdown-menu'>
-            <div className='dropdown-heading' onClick={openSubMenu}>Rooms</div>
-            { open ? 
-            <ul className='dropdown-menu_items'  onClick={closeDropDown}>  
-            <li><NavLink className='nav-link' to={'rooms/standard-room'}>standard</NavLink></li>
-            <li><NavLink className='nav-link' to={'rooms/delux'}>deluxe</NavLink></li>
-            <li><NavLink className='nav-link' to={'rooms/double-delux'}>double deluxe</NavLink></li>
-            <li><NavLink className='nav-link' to={'rooms/suite'}>suite</NavLink></li>
-            <li><NavLink className='nav-link' to={'rooms/executive-suite'}>executive suite</NavLink></li>
-            </ul> : null  }
-        </li>
-        <li><NavLink className='nav-link' to={'meetings'}>meetings</NavLink></li>
-        <li><NavLink className='nav-link' to={'contact'}>contact</NavLink></li>
-        <li><NavLink className='nav-link' to={'about'}>about</NavLink></li>
-    </ul>
+    <nav className='topnav'>
+      <Link className='topnav-link' to={'/'}>Home</Link>
+      <Link className='topnav-link' to={'gallery'}>gallery</Link>
+
+      <div className='dropdown'>
+        <div className='dropdown-heading'>rooms<BiChevronDown/></div>
+
+        <div className='dropdown-menu'>  
+          <Link className='topnav-link' to={'rooms/standard-room'}>standard room</Link>
+          <Link className='topnav-link' to={'rooms/deluxe'}>deluxe</Link>
+          <Link className='topnav-link' to={'rooms/double-deluxe'}>double deluxe</Link>
+          <Link className='topnav-link' to={'rooms/suite'}>suite</Link>
+          <Link className='topnav-link' to={'rooms/executive-suite'}>executive suite</Link>
+        </div>   
+      </div>
+
+      <Link className='topnav-link' to={'meetings'}>meetings</Link>
+      <Link className='topnav-link' to={'contact'}>contact</Link>
+      <Link className='topnav-link' to={'about'}>about</Link>
+    </nav>
   )
 }
 
