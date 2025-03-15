@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/brandhotel/static/css/main.816ccd83.css",
-    "main.js": "/brandhotel/static/js/main.4bdc9832.js",
+    "main.js": "/brandhotel/static/js/main.b186a5bd.js",
     "static/js/453.b651113b.chunk.js": "/brandhotel/static/js/453.b651113b.chunk.js",
     "static/media/hotel_tour.mp4": "/brandhotel/static/media/hotel_tour.41bf114a75424b2fe00c.mp4",
     "static/media/event.jpg": "/brandhotel/static/media/event.c4dd4091dc4a790972f6.jpg",
@@ -32,11 +32,11 @@
     "static/media/room.jpg": "/brandhotel/static/media/room.682e702ec30334a8e4b9.jpg",
     "index.html": "/brandhotel/index.html",
     "main.816ccd83.css.map": "/brandhotel/static/css/main.816ccd83.css.map",
-    "main.4bdc9832.js.map": "/brandhotel/static/js/main.4bdc9832.js.map",
+    "main.b186a5bd.js.map": "/brandhotel/static/js/main.b186a5bd.js.map",
     "453.b651113b.chunk.js.map": "/brandhotel/static/js/453.b651113b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.816ccd83.css",
-    "static/js/main.4bdc9832.js"
+    "static/js/main.b186a5bd.js"
   ]
 }
