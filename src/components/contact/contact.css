@@ -1,45 +1,72 @@
-.contact{
+.contacts{
     width: 100%;
+    margin-top: 32px;
 }
-.contactUs-wrapper{
+.contacts-wrapper{
     width: 100%;
-    padding:48px 16px 0;
+    display: grid;
+    gap: 32px 64px;
+}
+.contacts-right{
+    width: 100%;
+    padding: 16px 32px;
+    margin-bottom: 32px;
+
+}
+.contacts-right div{
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    align-items: center;
-    text-align: center;
+    gap: 5px;
+    margin-bottom: 20px;
+    
 }
-.contactUs-wrapper a{
-    color: black;
+.contacts-right div input{
+    width: 100%;
+    padding: 5px 0;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid gray;
 }
-.contactUs-address{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
+.contacts-right div input::placeholder{
+    color: gray;
 }
-.contactUs-logo{
-    width: 40px;
-    height: 40px;
-    background-color: lightblue;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.contactUs-address h2{
-    text-align: center;
-    font-weight: 500;
-    position: relative;
-    padding-bottom: 24px;
-    margin-bottom: 24px;
-    display: flex;
-    justify-content: center;
+.contacts-right div label{
+    width: auto;
     text-transform: capitalize;
+    font-weight: 500;
 }
-.contactUs-address h2::after{
+.contacts-right div textarea{
+    padding: 8px;
+    margin-top: 8px;
+    height: 125px;
+}
+.submit-btn{
+    width: 100%;
+    padding: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    border: 0;
+    background-color: #F27300;
+}
+.contacts-left{
+    width: 100%;
+    padding: 16px;
+    display: block;
+    text-align: center;
+}
+.contacts-left h2{
+    text-transform: capitalize;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom:  20px;
+    position: relative;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+}
+.contacts-left h2::after{
     content: "";
     width: 64px;
     height: 3px;
@@ -48,13 +75,27 @@
     bottom: 0;
     transform: translateX(-50%, 50%);
 }
-.contactUs-icons{
+.contacts-call{
     display: flex;
-    gap: 16px;
+    gap: 5px;
+    align-items: flex-start;
     justify-content: center;
-    align-items: center;
+    & span{
+        padding: 5px 0;
+        font-weight: 500;
+    }
 }
-.contactUs-icons button{
+.contacts-call div{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    & a{
+        padding: 5px;
+        color: black;
+        display: block;
+    }
+}
+.contacts-bottom button{
     padding: 10px 20px;
     border-radius: 8px;
     color: white;
@@ -74,57 +115,14 @@
         color: white;
     }
 }
-.email-btn{
-    background-color: rgb(195, 167, 7);
-}
-.whatsapp-btn{
-    background-color: #04931e;
-}
-.call-btn{
-    background-color: #0567b7;
-}
-.contactUs-reception{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2px;
-    margin-top: 32px;
-    
-    & h2{
-        color: black;
-        font-weight: 500;
-        text-transform: capitalize;
-    }
-    & a{
-        padding: 8px 16px;
-    }
-
-}
-.contactUs-details{
-    display: grid;
-    gap: 8px;
-    justify-content: center;
-}
-.contactUs-details label{
-    cursor: pointer;
-    display: flex;
-    gap: 16px;
-}
-
-.contactUs-details label span{
-    text-align: start;
-    font-weight: 400;
-}
-.contactUs-socialmedia{
+.contacts-socialmedia{
+    margin-top: 40px;
     display: flex;
     gap: 32px;
-    justify-content: center;
     align-items: center;
-    margin-top: 32px;
+    justify-content: center;
 }
-
-.contactUs-socialmedia-icon{
+.contacts-socialmedia a{
     width: 35px;
     height: 35px;
     background-color: #f1f1f1;
@@ -132,7 +130,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 500;
 
     & svg{
         font-size: 16px;
@@ -141,8 +138,10 @@
 }
 
 @media screen and (min-width:1024px) {
-    .contactUs-wrapper{
-        width: 1050px;
+    .contacts-wrapper{
+        width: 70%;
         margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }

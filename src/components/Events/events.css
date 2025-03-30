@@ -1,32 +1,30 @@
 .events{
     width: 100%;
-    padding: 48px 0;
-    background-color: white;
-    & h2{
-        text-transform: capitalize;
-        font-weight: 500;
-        text-align: center;
-        margin-bottom: 32px;
-    }
+    padding: 16px 0;
 }
+
 .events-wrapper{
-    width: 100%;
-}
-.hall{
-    width: 100%;
-    margin-bottom: 86px;
-}
-.hall-details{
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 16px;
+    gap: 32px;
+    margin: 48px 0 32px;
+}
+.hall{
+    width: 100%;
+    margin-bottom: 40px;
+}
+.hall-details{
+    width: 100%;
     padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
 
     & p{
+        padding: 8px 0;
         text-align: center;
-        padding: 0 8px;
     }
 }
 .hall-details div{
@@ -34,7 +32,6 @@
     flex-direction: column;
     gap: 16px;
     align-items: center;
-    justify-content: center;
 
     & h3{
         display: flex;
@@ -47,23 +44,26 @@
     height: 325px;
     background-color: #f1f1f1;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     & img{
         object-fit: cover;
         object-position: center;
     }
 }
 
-.hall-details div h3{
+.hall-details div h2{
     font-weight: 500;
     text-transform: uppercase;
     position: relative;
     padding-bottom: 16px;
-    margin: 32px 0 16px;
+    margin: 0 0 16px;
     display: flex;
     justify-content: center;
 
 }
-.hall-details div h3::after{
+.hall-details div h2::after{
     content: "";
     width: 64px;
     height: 3px;
@@ -73,18 +73,17 @@
     transform: translateX(-50%, 50%);
 }
 .hall-amenities-wrapper{
-    width: 100%;
     padding: 16px;
     display: flex;
     flex-direction: column;
     gap: 16px;
-    margin: 32px 0;
-    & h3{
+    & h2{
         text-transform: capitalize;
         font-weight: 500;
         margin-bottom: 16px;
     }
 }
+
 .hall-amenities{
     width: 100%;
     display: flex;
@@ -94,36 +93,24 @@
 }
 .hall-amenity{
     width: 100%;
-    padding: 16px 32px;
+    padding: 16px ;
     border-radius: 16px;
     display: flex;
     align-items: center;
     gap: 16px;
     background-color: #f1f1f1;
-
-    & i{
-        font-size: 24px;
-    }
     & span{
         font-weight: 500;
     }
 }
 .hall-contacts{
-    margin-top: 48px;
-    width: 100%;
-    padding: 32px 24px;
-    background-color: white;
-
+    padding: 16px;
     display: grid;
     place-items: centre;
-    & h3{
-        font-weight: 500;
-        text-transform: capitalize;
-        text-align: center;
-    }
     & p{
         text-align: center;
         margin: 16px 0 ;
+        font-size: 18px;
     }
 
     & a{
@@ -134,6 +121,25 @@
         align-content: flex-end;
     }
 }
+.hall-contacts h2{
+    font-weight: 500;
+    text-transform: capitalize;
+    position: relative;
+    padding-bottom: 16px;
+    margin: 0 0 16px;
+    display: flex;
+    justify-content: center;
+
+}
+.hall-contacts h2::after{
+    content: "";
+    width: 64px;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%, 50%);
+}
 .hall-contacts svg{
     font-size: 20px;
     margin-right: 16px;
@@ -141,21 +147,30 @@
 }
 @media screen and (min-width: 1024px){
     .events-wrapper{
-        width: 70%;
-        margin: 0 auto;
-    }
-    
+        width: 90%;
+        margin: 64px auto 32px;
+    } 
     .hall-details{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 32px;
+        grid-template-columns: 45% 50%;
+        gap: 5%;
+    }
+    .hall-image{
+        height: 400px;
     }
     .hall-amenity{
         width: 425px;
     }
-    
+  
     .hall-contacts{
-        width: 425px;
+        width: 1024px;
         margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 1220px){
+    .events-wrapper{
+        width: 70%;
     }
 }

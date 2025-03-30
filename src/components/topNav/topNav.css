@@ -6,64 +6,80 @@
     align-items: flex-end;
 }
 .topnav-link{
+    padding: 5px 0;
+    width: 100px;
     color: black;
     text-transform: uppercase;
     text-wrap: nowrap;
-    
-    padding: 8px 16px;
     letter-spacing: 1.5px;
+    font-size: 16px;
+    overflow: hidden;
 
     display: flex;
     align-items: center;
     justify-content: center;
     transition: 100ms all ease-out;
 }
-/* .topnav-link:hover{
-    color: #F27300 ;
-} */
-
+.topnav-link:hover, .dropdown-heading:hover{
+    font-weight: 500;
+    border-bottom:2px solid #F27300;
+    background-color: #f1f1f1;
+}
+.topnav-link:focus, .dropdown-heading:focus{
+    font-weight: 500;
+    background-color: #F27300;
+    color: white;
+}
 .dropdown{
-    width: 0 auto;
+    width: auto;
 }
 .dropdown-heading{
+    width: 100px;
+    padding: 5px 0;
+    overflow: hidden;
+    font-size: 16px;
     color: black;
-    text-transform: uppercase;
-    
-    padding: 8px 16px;
     letter-spacing: 1.5px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    text-transform: uppercase;    
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
     & svg{
         color: gray ;
-        font-size: 22px;
-        margin-left: 4px;
-
+        font-size: 24px;
+        margin-left: 2px;
     }
 }
 .dropdown-menu{
-    width: 300px;
-    padding: 32px 12px;
+    display: none;
+}  
+.dropdown-menu .topnav-sublink{
+    width: 100%;
+    padding: 8px 16px;
+    color: black;
+    text-transform: uppercase;
+}
+.dropdown:hover .dropdown-menu{
+    display: contents;
+    width: 275px;
+    padding: 20px 0 0;
     border-radius: 6px;
+    overflow: hidden;
 
     position: absolute;
     z-index: 1000;
-    display: none;
     background-color: white;
     transition: all 600ms ease;
-}
-.dropdown-menu .nav-link{
-    background-color: #fff;
-    padding: 16px ;
-}
 
-.dropdown:hover .dropdown-menu{
-    display: block;
-    text-align: start;
-    gap: 4px;
     display: flex;
+    gap: 4px;
     flex-direction: column;
-    align-items: flex-start;
-
+    justify-items: flex-start;
 }
+.dropdown-menu .topnav-sublink:hover{
+    font-weight: 500;
+    border-bottom:2px solid #F27300;
+    background-color: #f1f1f1;
+}
+    

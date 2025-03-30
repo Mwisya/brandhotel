@@ -1,7 +1,7 @@
 .restaurant-lounge{
     width: 100%;
-    padding: 24px 16px;
-    margin: 64px auto 120px;
+    padding: 16px;
+    margin-bottom: 64px;
     display: flex;
     justify-content: center;
 }
@@ -27,7 +27,7 @@
     text-align: center;
     font-weight: 500;
     position: relative;
-    padding-bottom: 24px;
+    padding-bottom: 20px;
     margin-bottom: 48px;
     display: flex;
     justify-content: center;
@@ -48,7 +48,7 @@
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
-    gap: 16px;
+    gap: 5px;
     padding-bottom: 16px;
 }
 .restaurant-lounge-image img{
@@ -82,9 +82,6 @@
     }
     .restaurant-lounge-image{
         width: 100%;
-        overflow: visible;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
     }
 }
 @media screen and (min-width:1024px) {
@@ -94,7 +91,6 @@
     
     .restaurant-lounge-overview{
         width: 35%;
-
         & p{
             padding: 0;
             text-align: center;
@@ -107,9 +103,8 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }   
-@media screen and (min-width:1440px) {
-    .restaurant-lounge-wrapper{
+@media screen and (min-width:1220px) {
+    .meeting-venues-wrapper{
         width: 90%;
     }
- 
 }

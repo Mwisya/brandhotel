@@ -5,44 +5,39 @@ import { MdOutlineEmail, MdPhone } from 'react-icons/md'
 const Events = ({halls, amenities }) => {
   return (
     <div className='events'>
-      <h2>Explore Venues</h2>
       <div className='events-wrapper'>
         {
           halls.map((hall,index)=>{
             return(
             <div className='hall' key={index}>
-
               <div className='hall-details'>
+                <div>
+                  <h2>{hall.title}</h2>
+                  <p>{hall.desc}</p>
+                </div>
                 <div className='hall-image'>
                   <img src={hall.image} alt="" />
                 </div>
-                <div>
-                  <h3>{hall.title}</h3>
-                  <p>{hall.desc}</p>
-                </div>
-              </div>
-            
+              </div>       
             </div>
             )
           })
         }
 
-        <div className='hall-amenities-wrapper'>
-          <h3>Meeting & events amenities</h3>
-          <div className='hall-amenities'>
-          { amenities.map((a, i)=>{
-            return(
-                <div key={i} className='hall-amenity'>
-                  <span>{a}</span>
-                </div>
-            )
-          })}
-        </div>
-        </div>
-
-
+      <div className='hall-amenities-wrapper'>
+        <h2>Meeting & events amenities</h2>
+        <div className='hall-amenities'>
+        { amenities.map((a, index)=>{
+          return(
+              <div key={index} className='hall-amenity'>
+                <span>{a}</span>
+              </div>
+          )
+        })}
+      </div>
+      </div>
       <div className='hall-contacts'>
-        <h3>Contact information</h3>
+        <h2>Contact information</h2>
         <p>
           Contact our team of experts to help make your meeting a success
         </p>

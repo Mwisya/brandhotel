@@ -2,14 +2,14 @@ import React from 'react'
 import RoomLayout from '../../layouts/RoomLayout/RoomLayout'
 import { useRoomsContext } from '../../contextApi/roomsContext'
 
-const DoubleDelux = () => {
-  const {doubleDeluxRoom} = useRoomsContext()
+const PresidentialSuite = () => {
+  const {presidential_suite} = useRoomsContext()
 
   return (
     <main>
-      <RoomLayout room = {doubleDeluxRoom}/>
+      <RoomLayout room = {presidential_suite}/>
     </main>
   )
 }
 
-export default DoubleDelux
+export default PresidentialSuite

@@ -8,7 +8,7 @@ const MeetingVenues = ({data}) => {
       <div className="meeting-venues-wrapper">
           <div className="meeting-venues-overview">
             <h2>{venues.venuesName} </h2>
-            <p>{venues.venuesContent}           
+            <p>{venues.venuesContent}       
             </p>
             <a href="meetings">explore venues</a>
           </div>
@@ -19,9 +19,7 @@ const MeetingVenues = ({data}) => {
                 return(
               <div key={index} className="meeting-venue">
                   <img src={item.image} alt="" />
-                  <div>
-                      <h3>{item.venue} </h3>
-                  </div>
+                  <h2>{item.venue} </h2>     
               </div>
                 )
               })

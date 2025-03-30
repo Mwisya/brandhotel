@@ -1,12 +1,10 @@
 .cta-btn-fixed{
     width: 100%;
-    height: max-content;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: none;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 16px;
 
     position: fixed;
     bottom: 0;
@@ -15,26 +13,17 @@
     background-color: #B60017;
     color: rgba(255, 255, 255, 0);
 }
-.cta-btn-fixed label{
-   cursor: pointer;
+.cta-btn-fixed a{
+    padding: 6px 16px;
     color: white;
-    padding: 8px 16px;
-    font-size: 16px;
-    color: white;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    gap: 8px;
-
-    & svg{
-        font-size: 18px
-    }
-}
-.cta-btn-fixed label a{
-    color: white;
+    font-weight: var(--font_weight_400);
+    font-size: var(--font_size_medium);
     text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.cta-btn-fixed label:hover{
+.cta-btn-fixed a:hover{
     background-color: rgba(255, 255, 255, 0.1);
     
 }

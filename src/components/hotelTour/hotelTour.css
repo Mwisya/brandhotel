@@ -1,17 +1,16 @@
 .hotel-tour{
     width: 100%;
-    margin-bottom: 100px;
-    padding: 0 16px;
+    margin-bottom: 64px;
+    padding: 16px;
     display: grid;
     justify-content: center;
     align-items: center;
 }
-
 .hotel-tour h2{
     text-align: center;
     font-weight: 500;
     position: relative;
-    padding-bottom: 24px;
+    padding-bottom: 20px;
     margin-bottom: 48px;
     display: flex;
     justify-content: center;

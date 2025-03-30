@@ -8,12 +8,9 @@ import Logo from '../logo/Logo'
 
 const Header = () => {
   const [toggleNav, setToggleNav] = useState(false);
-  const open = ()=>{
-    setToggleNav(true)
-  }
-  const close = ()=>{
-    setToggleNav(false)
-  }
+  const open = ()=>{setToggleNav(true)};
+  const close = ()=>{setToggleNav(false)};
+  
   return (
     <header>
       <div className='header-logo'><Logo/></div>

@@ -34,7 +34,7 @@ const Footer = () => {
         </div>
 
         <div className='room-links'>
-          <h3>accomodation</h3>
+          <h3>rooms & suites</h3>
           <Link to={"rooms/standard-room"}>standard room</Link>
           <Link to={"rooms/deluxe"}>deluxe</Link>
           <Link to={"rooms/double-deluxe"}>double deluxe</Link>
@@ -45,12 +45,12 @@ const Footer = () => {
         <div className='footer-item'>
           <h3>Address</h3>
           <ul>
-            <li><p>Brand Hotel - Dodoma</p> </li>
-            <li><p>Kisasa, Kisasa Road</p> </li>
-            <li><p>2222-5555 Dodoma, Tanzania</p></li>
+            <li><p>Brand Hotel Dodoma</p></li>
+            <li><p>Plot No 52 Mwangaza, Kisasa Hse 300</p></li>
+            <li><p>PO BOX 2222-5555 Dodoma, Tanzania</p></li>
             <li>
               <label htmlFor="tel"><MdPhone/></label>
-              <a href="tel:+255746780271" id='tel'> +255746780271</a>
+              <a href="tel:+255746780271" id='tel'> +255 746 780 271</a>
             </li>   
             <li>
               <label htmlFor="email"><MdOutlineEmail/></label>
@@ -71,8 +71,12 @@ const Footer = () => {
       </div>
 
       <div className='terms-and-conditions'>
-        <p>All reserved brand hotel</p>
-        <p> <MdCopyright/> copyright 2025 </p>
+        <div>
+          <Link to={'terms-and-conditions'} className='link'>terms & conditions</Link> |
+          <Link to={'privacy-policy'} className='link'>privacy policy</Link>
+        </div>
+        <p>All rights reserved brand hotel</p>
+        <p><MdCopyright/> copyright 2025 </p>
       </div>
       
     </footer>

@@ -3,8 +3,10 @@ import './logo.css'
 
 const Logo = () => {
   return (
-    <div className='hotel'>
-        <i className='hotel-logo'>logo</i>
+    <div className='hotel-logo-container'>
+        <div className='hotel-logo'>
+          <img src="" alt=""/>
+        </div>
         <h4 className='hotel-name'>brand hotel</h4>
     </div>
   )

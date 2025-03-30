@@ -9,22 +9,20 @@ const Map = () => {
 
         <div className='map-details'>
           <div className="map-heading">
-              {/* <MdLocationPin/> */}
               <h2>How to get to</h2>
               <h1>Brand Hotel</h1>
           </div>
           <div className='map-address'>
-            <p>Kisasa, Dodoma, Tanzania </p>
-            <p>Plot No 52 Mwangaza House 300</p>
-            <p>Along Kikoso Road, Kikoso </p>
+            <p>Along Kikoso Road </p>
+            <p>Plot No 52 Mwangaza, Kisasa Hse 300</p>
             <p>P.O BOX 2222-5555 Dodoma, Tanzania</p>
             
             <div>
               <a href="mailto:reservations@brandhotel-dodoma.com"> 
-                <i> <MdOutlineEmail/></i>
+                 <MdOutlineEmail/>
                 reservations@brandhotel-dodoma.com</a>
-              <a href="tel:+255773467756"> <i> <MdPhone/></i>  +255 773 467 756</a>
-              <a href="tel:+255746780271"> <i><MdWhatsapp/></i> +255 746 780 271</a>
+              <a href="tel:+255773467756"> <MdPhone/>  +255 773 467 756</a>
+              <a href="tel:+255746780271"><MdWhatsapp/> +255 746 780 271</a>
             </div>
           </div>   
         </div>

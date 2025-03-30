@@ -1,7 +1,6 @@
 footer{
     width: 100%;
     color: white;
-    background-color: #02102A;
     background-color: rgb(11, 11, 84);
     padding: 48px 16px;
 }
@@ -42,22 +41,28 @@ footer{
 .footer-item ul{
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 4px;
 }
 .footer-item ul li .quick-link{
     color: white;
     text-transform: capitalize;
+    padding: 4px 0;
 }
 .footer-item ul li{
     display: flex;
     align-items: center;
     gap: 16px;
 }
+.footer-item ul li p{
+    color: white;
+    text-transform: capitalize;
+    padding: 4px 0;
+}
 
 .room-links{
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 4px;
     color: white;
 }
 .room-links h3{
@@ -72,10 +77,9 @@ footer{
 .room-links a{
     text-transform: capitalize;
     color: white;
+    padding: 4px 0;
 }
-.room-links a{
-    text-transform: capitalize;
-}
+
 .footer-logo{
     display: flex;
     flex-direction: column;
@@ -113,13 +117,21 @@ footer{
 }
 
 .terms-and-conditions{
+    text-transform: capitalize;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 8px;
+}
+.terms-and-conditions div{
+    display: flex;
+    gap: 16px;
+}
+.terms-and-conditions div .link{
+    color: white;
 }
 .terms-and-conditions p{
-    text-transform: capitalize;
     display: flex;
     align-items: center;
     justify-content: center;

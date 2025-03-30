@@ -4,16 +4,19 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { RoomsProvider } from './contextApi/roomsContext';
+import { ReactHelmetProvider } from './contextApi/ReactHelmetContext';
+import ScrollToTop from './ScrollToTop';
 import { BrowserRouter } from 'react-router-dom';
-
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename="brandhotel">
+    <BrowserRouter basename="/brandhotel">
+    <ScrollToTop/>
       <RoomsProvider>
-        <App/>
+        <ReactHelmetProvider>
+          <App/>
+        </ReactHelmetProvider>
       </RoomsProvider>
     </BrowserRouter>
   </React.StrictMode>

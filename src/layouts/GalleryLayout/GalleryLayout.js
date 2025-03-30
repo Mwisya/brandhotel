@@ -8,6 +8,7 @@ const GalleryLayout = ({gallery}) => {
   const[file, setFile]= useState(0)
   const open = () => {setOpenModal(true)}
   const close = () => {setOpenModal(false)}
+  const length = gallery.length
 
   return (
     <section className='gallery'>
@@ -32,6 +33,7 @@ const GalleryLayout = ({gallery}) => {
           <div className='gallery-modal-image'>
             <img src={file}  alt="" /> 
           </div>
+          { length <= 1 ? null :
           <div className='gallery-images-wrapper'>
             {
               gallery.map((img,index)=>{
@@ -43,6 +45,7 @@ const GalleryLayout = ({gallery}) => {
               })
             }
           </div>
+          }
          
         </div>
       </div>

@@ -1,117 +1,109 @@
-.sidenav{
-    height: 100vh;
+.sidenav-backdrop{
     width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 900;
+    cursor: pointer;
+}
+.sidenav{
+    width: 300px;
+    height: 100%;
     color: black;
     background-color: white;
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 16px 16px;
+    
     display: contents;
     display: flex;
     flex-direction: column;
     gap: 16px;
-    z-index: 900;
-    animation: scale-up 250ms ease;
-}
-@keyframes scale-up {
-    0%{
-        scale: 0;
-    }
-    100%{
-        scale: 1;
-    }
-}
-
-.close-nav{
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    
-    & svg{
-        font-size: 42px;
-        color: black;
-    }
+    animation: transform-scale 300ms ease-in-out;
 }
 .sidenav-logo{
+    padding: 16px 16px 16px 16px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    
-}
-.sidenav-logo div{
-    width: max-content;
+    align-items: flex-end;  
     & i{
-        width: 35px;
-        height: 35px;
-        background-color: goldenrod;
-        
+        width: 32px;
+        height: 32px;
+        background-color: lightblue;
         display: flex;
         align-items: center;
         justify-content: center;
-        overflow: hidden;
+        overflow: hidden;  
     }
-    &  h3{
-        font-weight: 500;
-        margin-top: 4px;
-        text-transform: uppercase;
+    & svg{
+        font-size: 32px;
     }
 }
 
 .sidenav-items{
    width: 100%;
-   margin: 0 auto;
+   font-size: 20px;
+   font-weight: 400;
    display: flex;
+   color: black;
    flex-direction: column;
 }
-.sidenav-items li {
+.navLink{
+    width: 100%;
+    color: black;
+    padding: 8px 16px;
     text-transform: capitalize;
-    font-size: 20px;
-    padding: 8px 0;
-    color: black;
-    font-weight: 400;
-}
-.sidenav-items li .navLink{
-    color: black;
-    font-size: 20px;
-    font-weight: 400;
-}
-.sub-menu{
-    cursor: pointer;
-    transition:  all 600ms ease-out;
-}
-.sub-menu_heading{
     display: flex;
-    font-size: 20px;
-    font-weight: 400;
-    
+    align-items: center;
 }
-.sub-menu svg{
-    color: gray;
-}
+.submenu-heading{
+    width: 100%;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
 
-.sub-menu ul li{
-    padding: 8px;
-    text-transform: capitalize;
+    & svg{
+        font-size: 24px;
+        color: gray;
+    }
+}
+.navLink:hover, .submenu-heading:hover{
+    background-color: #76871D;
+    color: white;
+   transition: all 250ms ease;
+   & svg{
+    color: white;
+   }
+
+}
+.submenu-content{
+    width: 100%;
+    padding-left: 8px;
+    font-weight: 400;
+    height: auto;
+    display: flex;
+    flex-direction: column;
 }
 .sidenav-info{
+    padding: 8px 16px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 18px;
+    gap: 16px;
     margin-top: 16px;
+
 }
 .sidenav-address, .sidenav-contact{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     gap: 8px;
-    & h4{
-        color: #F27300;
+    & h3{
         font-weight: 500;
-        text-transform: uppercase;
+        color: #F27300;
+        text-transform: capitalize;
     }
     & a{
         color: black;
@@ -126,7 +118,7 @@
     & svg{
         height: 35px;
         width: 35px;
-        padding: 6px;
+        padding: 7px;
         font-size: 16px;
         color: #F27300;
         background-color: #f1f1f1;
@@ -138,5 +130,19 @@
     gap: 16px;
     & a{
         color: black;
+    }
+}
+@keyframes transform-scale {
+    0%{
+        scale: 0;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+@media screen and (min-width:425px) {
+    .sidenav{
+        width: 350px;
     }
 }

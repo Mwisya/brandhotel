@@ -7,21 +7,19 @@ const TopNav = () => {
   return (
     <nav className='topnav'>
       <Link className='topnav-link' to={'/'}>Home</Link>
-      <Link className='topnav-link' to={'gallery'}>gallery</Link>
-
       <div className='dropdown'>
-        <div className='dropdown-heading'>rooms<BiChevronDown/></div>
+        <span className='dropdown-heading'>rooms<BiChevronDown/></span>
 
         <div className='dropdown-menu'>  
-          <Link className='topnav-link' to={'rooms/standard-room'}>standard room</Link>
-          <Link className='topnav-link' to={'rooms/deluxe'}>deluxe</Link>
-          <Link className='topnav-link' to={'rooms/double-deluxe'}>double deluxe</Link>
-          <Link className='topnav-link' to={'rooms/suite'}>suite</Link>
-          <Link className='topnav-link' to={'rooms/executive-suite'}>executive suite</Link>
+          <Link className='topnav-sublink' to={'rooms/standard-room'}>standard room</Link>
+          <Link className='topnav-sublink' to={'rooms/deluxe'}>deluxe</Link>
+          <Link className='topnav-sublink' to={'rooms/double-deluxe'}>double deluxe</Link>
+          <Link className='topnav-sublink' to={'rooms/suite'}>suite</Link>
+          <Link className='topnav-sublink' to={'rooms/executive-suite'}>executive suite</Link>
         </div>   
       </div>
-
       <Link className='topnav-link' to={'meetings'}>meetings</Link>
+      <Link className='topnav-link' to={'gallery'}>gallery</Link>
       <Link className='topnav-link' to={'contact'}>contact</Link>
       <Link className='topnav-link' to={'about'}>about</Link>
     </nav>
