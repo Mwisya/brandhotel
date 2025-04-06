@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/brandhotel/static/css/main.6cfec2cc.css",
-    "main.js": "/brandhotel/static/js/main.81e019be.js",
+    "main.css": "/brandhotel/static/css/main.e293283d.css",
+    "main.js": "/brandhotel/static/js/main.8b588e1b.js",
     "static/js/453.35e1c54f.chunk.js": "/brandhotel/static/js/453.35e1c54f.chunk.js",
     "static/media/hotel_tour.mp4": "/brandhotel/static/media/hotel_tour.41bf114a75424b2fe00c.mp4",
     "static/media/vid_exc_suite.mp4": "/brandhotel/static/media/vid_exc_suite.36976038a153f3ed9ab0.mp4",
@@ -31,6 +31,7 @@
     "static/media/lounge.jpg": "/brandhotel/static/media/lounge.2a26858320ce27f835b6.jpg",
     "static/media/dinning.jpg": "/brandhotel/static/media/dinning.c3e3a50bdd97b17a1631.jpg",
     "static/media/facility3.jpg": "/brandhotel/static/media/facility3.842dfc3e665a1c4339df.jpg",
+    "static/media/logo.png": "/brandhotel/static/media/logo.ef2e5926d6934c057f39.png",
     "static/media/sitting.jpg": "/brandhotel/static/media/sitting.f82b1a2bcdabdbaf380b.jpg",
     "static/media/toiletries.jpg": "/brandhotel/static/media/toiletries.9f981473d4efd76e76c3.jpg",
     "static/media/facility.jpg": "/brandhotel/static/media/facility.f31b0ea9626d414549a3.jpg",
@@ -47,12 +48,12 @@
     "static/media/sitting_2.jpg": "/brandhotel/static/media/sitting_2.0521a83f4ceafb884cd2.jpg",
     "static/media/closet.jpg": "/brandhotel/static/media/closet.6aae828ebb7a9b566545.jpg",
     "index.html": "/brandhotel/index.html",
-    "main.6cfec2cc.css.map": "/brandhotel/static/css/main.6cfec2cc.css.map",
-    "main.81e019be.js.map": "/brandhotel/static/js/main.81e019be.js.map",
+    "main.e293283d.css.map": "/brandhotel/static/css/main.e293283d.css.map",
+    "main.8b588e1b.js.map": "/brandhotel/static/js/main.8b588e1b.js.map",
     "453.35e1c54f.chunk.js.map": "/brandhotel/static/js/453.35e1c54f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6cfec2cc.css",
-    "static/js/main.81e019be.js"
+    "static/css/main.e293283d.css",
+    "static/js/main.8b588e1b.js"
   ]
 }
