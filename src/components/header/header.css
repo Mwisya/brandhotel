@@ -1,9 +1,10 @@
 header{
-    padding: 10px 16px;
+    height: auto;
+    padding: 8px;
     background-color: white;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     position: sticky;
     top: 0;
     left: 0;
@@ -24,13 +25,14 @@ header{
 .header-topnav{
     display: none;
 }
-
+@media screen and (min-width:900px) {
+    .sidenav{
+        display: none;
+    }
+}
 @media screen and (min-width:1024px) {
     header{
         padding: 10px 16px;
-    }
-    .sidenav{
-        display: none;
     }
     .menu-bar{
         display: none;

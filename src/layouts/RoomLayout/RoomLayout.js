@@ -1,9 +1,8 @@
 import React, {useState} from 'react'
 import './roomLayout.css'
-import { MdOutlineEmail, MdWhatsapp,MdClose, MdOutlineBed, MdCall } from 'react-icons/md'
+import { MdWhatsapp,MdClose, MdOutlineBed, MdWallet, MdOutlineMail, MdPhoneAndroid } from 'react-icons/md'
 import BookingPopUp from '../../components/bookingPopUp/BookingPopUp'
-import { RiBankCardLine } from 'react-icons/ri'
-import { IoPeopleOutline } from 'react-icons/io5'
+import {IoPeopleOutline } from 'react-icons/io5'
 
 const RoomLayout = ({room}) => {
   const[file, setFile]= useState(null)
@@ -54,12 +53,12 @@ const RoomLayout = ({room}) => {
       </section>
       <section className='room-items'>
         <div className='room-amenities'>
-          <h3>Amenities</h3>
+          <h2>Amenities</h2>
           <ul className="amenities-wrapper">
             { amenitieslist.map((amenity, index) => {
               return(
                   <li className='amenity' key={index}>
-                    <span>{amenity.icon}</span>
+                    <i>{amenity.icon}</i>
                     <span>{amenity.title}</span>
                   </li>
               ) }) }
@@ -67,40 +66,27 @@ const RoomLayout = ({room}) => {
         </div>
 
         <div className='room-reservation'>
-          <h3>Bookings & reservations</h3>
-          <p>Enjoy your stay in style & comfort in pure luxury.
+          <h2>Bookings & reservations</h2>
+          <p>Enjoy peaceful stay full of comfort and style in Dodoma
+            <div><MdPhoneAndroid/> <MdOutlineMail/> <MdWhatsapp/> </div>
           </p>
-
-          <div className='room-contacts'>
-            <a href="tel:+255773467756"><MdCall/></a>
-            <a href="mailto:reservations@brandhotel-dodoma.com" > <MdOutlineEmail/></a>
-            <a href="http://wa.me/255750866722"><MdWhatsapp/></a>
-          </div>
-
-          <div className='checkin-and-checkout'>
-            <div>
-              <h4>check in:</h4>
-              <span>10:00hrs</span>
-            </div>
-            |
-            <div>
-              <h4>check out:</h4>
-              <span>2:00hrs</span>
-            </div>
-          </div>
-
           <div className='room-price-booking'>
             <div className='room-price'>
-              <h4>{room.name}</h4>   
-              <div>
-                <span> <IoPeopleOutline/> Upto {room.capacity.guests} Guests </span>
-                <span> <MdOutlineBed/> {room.capacity.bed} King Bed </span>    
+              <h3>{room.name}</h3>   
+              <div className='price'>
+                <MdWallet/><div>Tsh {price}</div><span>/night</span> 
+              </div> 
+              <div className='room-price_capacity'>
+                <span><MdOutlineBed/> {room.capacity.bed} King Bed </span>    
+                <span><IoPeopleOutline/> Upto {room.capacity.guests} Guests </span>
               </div>
-              <p className='price'><RiBankCardLine/> <span>Tsh {price}</span>/night </p> 
             </div>
-            <button type="button" onClick={open_popup} className='booking-btn' >Book now</button>
           </div>
-
+          <div className='checkin-and-checkout'>
+            <div><span>check in: </span>10:00hrs</div> |
+            <div><span>check out: </span>2:00hrs</div>
+          </div>
+          <button type="button" onClick={open_popup} className='booking-btn' >Book now</button>
         </div>
 
       </section>

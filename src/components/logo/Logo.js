@@ -1,13 +1,12 @@
 import React from 'react'
 import './logo.css'
+import logo from '../../logo.png'
 
 const Logo = () => {
   return (
     <div className='hotel-logo-container'>
-        <div className='hotel-logo'>
-          <img src="" alt=""/>
-        </div>
-        <h4 className='hotel-name'>brand hotel</h4>
+      <img src={logo} alt='' className='hotel-logo'/>
+      <h3 className='hotel-name'>brand hotel</h3>
     </div>
   )
 }

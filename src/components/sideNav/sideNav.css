@@ -1,16 +1,17 @@
 .sidenav-backdrop{
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
     height: 100vh;
     display: flex;
     justify-content: flex-start;
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     z-index: 900;
     cursor: pointer;
 }
 .sidenav{
-    width: 300px;
+    width: 80%;
     height: 100%;
     color: black;
     background-color: white;
@@ -22,47 +23,54 @@
     animation: transform-scale 300ms ease-in-out;
 }
 .sidenav-logo{
-    padding: 16px 16px 16px 16px;
+    padding: 5px 10px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;  
-    & i{
-        width: 32px;
-        height: 32px;
-        background-color: lightblue;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;  
-    }
+    align-items: center;  
     & svg{
         font-size: 32px;
     }
 }
-
+.sidenav-logo img{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+    
+}
 .sidenav-items{
    width: 100%;
-   font-size: 20px;
-   font-weight: 400;
    display: flex;
-   color: black;
    flex-direction: column;
 }
 .navLink{
     width: 100%;
     color: black;
-    padding: 8px 16px;
+    padding: 8px 10px;
     text-transform: capitalize;
     display: flex;
     align-items: center;
+    font-size: 1.3rem;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
 .submenu-heading{
     width: 100%;
-    padding: 8px 16px;
+    padding: 8px 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 1.3rem;
     position: relative;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: capitalize;
 
     & svg{
         font-size: 24px;
@@ -71,63 +79,75 @@
 }
 .navLink:hover, .submenu-heading:hover{
     background-color: #76871D;
+    font-weight: 400;
     color: white;
-   transition: all 250ms ease;
+    transition: all 250ms ease;
    & svg{
-    color: white;
+        color: white;
    }
 
 }
 .submenu-content{
     width: 100%;
     padding-left: 8px;
-    font-weight: 400;
     height: auto;
     display: flex;
     flex-direction: column;
+    color: rgba(0, 0, 0, 0.8);
 }
-.sidenav-info{
-    padding: 8px 16px;
+.sidenav-contact{
+    padding: 8px 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 16px;
-    margin-top: 16px;
-
-}
-.sidenav-address, .sidenav-contact{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 8px;
-    & h3{
-        font-weight: 500;
+    & h4{
         color: #F27300;
         text-transform: capitalize;
+        margin-bottom: 4px;
+        font-weight: 400;
+    }
+    & a{
+        color: black;
+    }    
+}
+.sidenav-contact_tel{
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    margin: 8px 0;
+    & span{
+        font-weight: 500;
     }
     & a{
         color: black;
     }
-    
 }
-.sidenav-social-media{
+.sidenav-contact_tel div{
     display: flex;
-    gap: 24px;
-    align-items: flex-end;
-    margin-top: 16px;
-    & svg{
-        height: 35px;
-        width: 35px;
-        padding: 7px;
-        font-size: 16px;
-        color: #F27300;
-        background-color: #f1f1f1;
-        border-radius: 50px;
+    flex-direction: column;
+    gap: 8px;
+    & a{
+        font-size: var(--fs-small);
     }
+}
+.sidenav-contact_btns{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    margin-top: 16px;
+    color: black;
+}
+.sidenav-contact_btns a svg{
+    height: 28px;
+    width: 50px;
+    font-size: 24px;
+    padding: 5px 8px;
+    color: #F27300;
+    background-color: #f1f1f1;
 }
 .sidenav-contact div{
     display: flex;
-    gap: 16px;
+    gap: 8px;
     & a{
         color: black;
     }
@@ -143,6 +163,23 @@
 
 @media screen and (min-width:425px) {
     .sidenav{
-        width: 350px;
+        width: 80%;
     }
+    .navlink .submenu-heading{
+        font-style: 1.6rem;
+    }
+}
+@media screen and (min-width:768px) {
+    .sidenav{
+        width: 40%;
+    }
+    .navlink .submenu-heading{
+        font-style: 1.6rem;
+    }
+}
+@media screen and (min-width:1024px) {
+    .sidenav-backdrop{
+        display: none;
+    }
+    
 }

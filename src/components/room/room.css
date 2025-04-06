@@ -78,8 +78,10 @@
 
 }
 .amenities-list div span{
+    font-size: var(--fs-small);
+}
+.amenities-list div span::first-letter{
     text-transform: capitalize;
-    font-size: var(--font_size_medium);
 }
 .room-type a{
     padding: 12px 32px;

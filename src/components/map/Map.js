@@ -1,6 +1,5 @@
 import React from 'react';
 import './map.css';
-import { MdOutlineEmail, MdPhone, MdWhatsapp } from 'react-icons/md'
 
 const Map = () => {
   return (
@@ -13,16 +12,15 @@ const Map = () => {
               <h1>Brand Hotel</h1>
           </div>
           <div className='map-address'>
-            <p>Along Kikoso Road </p>
+            <p>P.O Box 2222-5555,</p>
+            <p>Dodoma, Tanzania </p>
             <p>Plot No 52 Mwangaza, Kisasa Hse 300</p>
-            <p>P.O BOX 2222-5555 Dodoma, Tanzania</p>
             
             <div>
+              <a href="tel:+255746780271"><span>Call:</span>+255 746 780 271</a>
+              <a href="tel:+255773467756"> <span>Tel:</span>+255 773 467 756</a>
               <a href="mailto:reservations@brandhotel-dodoma.com"> 
-                 <MdOutlineEmail/>
-                reservations@brandhotel-dodoma.com</a>
-              <a href="tel:+255773467756"> <MdPhone/>  +255 773 467 756</a>
-              <a href="tel:+255746780271"><MdWhatsapp/> +255 746 780 271</a>
+              <span>Email:</span>            reservations@brandhotel-dodoma.com</a>
             </div>
           </div>   
         </div>

@@ -25,7 +25,7 @@ const Gallery = ({gallery}) => {
  
   return (
     <section className='gallery'>
-      <div className='gallery-navigation'>
+      <div className='gallery-btns'>
         <button className='gallery-btn' onClick={()=>setActive('overview')}>overview</button>
         <button className='gallery-btn' onClick={()=>setActive('rooms')}>rooms & suites</button>
         <button className='gallery-btn' onClick={()=>setActive('meetings')}>meetings & events</button>

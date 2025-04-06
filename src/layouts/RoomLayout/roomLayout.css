@@ -100,8 +100,8 @@
     display: flex;
     flex-direction: column;
 
-    & h3{
-      margin-bottom: 16px;
+    & h2{
+      margin-bottom: 12px;
       font-weight: 500;
     }
 }
@@ -112,15 +112,19 @@
 }
 .amenity{
   padding: 12px 0;
-  text-transform: capitalize;
   text-align: start;
   display: flex;
-  gap: 12px;
-
+  gap: 12px; 
   & svg{
-    font-size: 24px;
-    color: #F27300;
-  }
+      font-size: 22px;
+      color: #F27300;
+    }
+}
+.amenity span{
+    font-size: 16px;
+}
+.amenity span::first-letter{
+    text-transform: capitalize;
 }
 .room-reservation{
     color: black;
@@ -128,114 +132,111 @@
     flex-direction: column;
     gap: 8px;
     justify-content: flex-start;
-    & h3{
+    & h2{
         text-transform: capitalize;
-        margin-bottom: 16px;
-        font-weight: 500;
-    }
-    & p{
-        text-align: start;
+        margin-bottom: 8px;
     }
 }
-.room-contacts{
-    width: 100%;
-    margin: 8px 0;
+.room-reservation p{
+    padding-right: 16px;
+    font-size: 17px;
+    text-align: start;
+    
+}
+.room-reservation p div{
     display: flex;
-    gap: 16px;
-    align-items: center;
-    justify-content: start;
-
-    & a{
-        height: 32px;
-        padding: 4px 32px;
-        color: black;
-        background-color: #f1f1f1;
+    gap: 10px;
+    margin: 12px 0 8px;
+    & svg{
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 40px;
+        height: 24px;
+        background-color: #f1f1f1;
+        padding: 4px;
     }
-
-    & svg{
-        font-size: 18px;
-    }
-    
 }
 .checkin-and-checkout{
     width: 100%;
     display: flex;
+    align-items: flex-end;
     gap: 16px;
-    margin: 32px 0 16px;
-
-    & h4{
+    margin: 10px 0 16px;
+    & span{
         font-weight: 500;
         text-transform: capitalize;
     }
-    & div{
-        display: flex;
-        gap: 8px;
-    }
 
 }
-
 .room-price-booking{
-    padding: 16px;
     width: 100%;
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    background-color: var(--bg-secondary);
 }
 .room-price{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 12px;
-    & h4{
-        font-weight: 500;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin: 16px 0 8px;
+    border:  1px solid #f1f1f1;
+    & h3{
+        font-weight: 400;
         text-transform: capitalize;
     }
 }
-.room-price div{
+.room-price .price{
+    padding: 8px 0;
     display: flex;
-    gap: 16px;
-    margin-bottom: 8px;
+    align-items: flex-end;
+    & svg{
+        font-size: 24px;
+        margin-right: 8px;
+    }
+    & div{
+        font-weight: 500;
+        font-size: 20px;
+    }
+    & span{
+        margin-left: 5px;
+        display: flex;
+        align-self: center;
+    }
 }
-.room-price div span{
+.room-price_capacity{
+    display: flex;
+    gap: 24px;
+}
+.room-price_capacity span{
     display: flex;
     align-items: flex-end;
     text-transform: capitalize;
-    font-size: 14px;
+    font-size: var(--fs-small);
     font-weight: 400;
     & svg{
         color: black;
         font-size: 18px;
-        margin-right: 8px;
+        margin-right: 6px;
     }
     
 }
-.price{
-    display: flex;
-    align-content: end;
-    gap: 8px;
-    & svg{
-        font-size: 24px;
-    }
-
-    & span{
-        font-weight: 700;
-        font-size: 17px;
-    }
-}
 .booking-btn{
-    color: white;
-    padding: 8px 16px;
+    padding: 16px;
+    margin-top: 10px;
     font-weight: 500;
     font-size: 16px;
-    background-color: #F27300;
     text-transform: capitalize;
-    border-radius: 16px;
+    color: white;
+    background-color: #F27300;
+    border-radius: 50px;
 }
+
 .room-gallery-container{
     padding: 16px 8px;
 }
@@ -366,10 +367,6 @@
     }
 }
 @media screen and  (min-width:1024px){
-    .amenities-sample_wrapper div span{
-        font-size: 19px;
-    }
-
     .room-items{
         width: 95%;
         margin: 64px auto;

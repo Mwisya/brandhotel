@@ -10,6 +10,7 @@ const Header = () => {
   const [toggleNav, setToggleNav] = useState(false);
   const open = ()=>{setToggleNav(true)};
   const close = ()=>{setToggleNav(false)};
+  // const backdroplose = ()=>{setToggleNav(false)};
   
   return (
     <header>

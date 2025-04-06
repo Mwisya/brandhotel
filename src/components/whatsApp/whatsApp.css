@@ -11,13 +11,12 @@
     left: 0;
     z-index: 1;
     background-color: #B60017;
-    color: rgba(255, 255, 255, 0);
 }
 .cta-btn-fixed a{
-    padding: 6px 16px;
+    padding: 8px 16px;
     color: white;
-    font-weight: var(--font_weight_400);
-    font-size: var(--font_size_medium);
+    font-weight: 400;
+    font-size: var(--fs-normal);
     text-transform: capitalize;
     display: flex;
     align-items: center;

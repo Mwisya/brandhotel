@@ -1,15 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
 :root{
   --bg-primary: white; 
   --bg-secondary: #f1f1f1; 
   --icon-color: #F27300; 
   --icon-size-normal: 24px; 
   --icon-size-lg: 32px; 
-  --font_size_small: 14px;
-  --font_size_normal: 1rem;
-  --font_size_medium: 15px;
-  --font_weight_500: 500;
-  --font_weight_400: 400;
-  --font_weight_300: 300;
+  --fs-small: 15px;
+  --fs-normal: 16px;
+  --fs-large: 18px;
 }
 *{
   margin: 0;
@@ -23,13 +22,19 @@ body, html {
    background-color: var(--bg-primary);
 }
 
+h1,h2{
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+ }
+
 ul{
   list-style: none;
 }
-h1,h2,h3,h4,h5,h6{
-  font-weight: 500;
- }
- img{
+img{
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
  }
@@ -62,16 +67,11 @@ button{
   cursor: pointer;
 }
 p{
-  font-size: 1rem;
+  font-size: var(--fs-normal);
   line-height: 1.5;
 }
-/* @media screen and (min-width:1024px) {
+ /* @media screen and (min-width:1024px) {
   p{
-    line-height: 1.5;
-  }
-}
-@media screen and (min-width:1220px) {
-  p{
-    line-height: 1.5;
+   font-size: var(--fs-large);
   }
 } */

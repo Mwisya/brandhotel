@@ -1,8 +1,10 @@
 import {createContext, useContext} from "react";
-import {MdAir, MdBalcony, MdCoffeeMaker, MdCurtains, MdOutlineBed, MdOutlineDesk, MdOutlineRoomService, MdRoomPreferences, MdTv } from 'react-icons/md'
+import {MdAir, MdBalcony, MdCoffeeMaker, MdCurtains, MdOutlineDesk, MdOutlineRoomService, MdRoomPreferences, MdTv } from 'react-icons/md'
 import { LuSofa } from 'react-icons/lu'
 import { FaShower, FaTv, FaWifi } from 'react-icons/fa'
 import { TbDeviceLandlinePhone } from "react-icons/tb";
+import { FaBottleWater } from "react-icons/fa6";
+import { IoBedOutline } from "react-icons/io5";
 import { BiFridge, BiSolidDryer } from "react-icons/bi";
 
 import standardroom from '../assets/roomTypes/standardroom.jpg'
@@ -50,7 +52,6 @@ import hotel_outdoor from '../assets/hotel_outdoor.jpg'
 import closet from '../assets/images/closet.jpg'
 import sitting from '../assets/images/sitting.jpg'
 import sitting_2 from '../assets/images/sitting_2.jpg'
-import { FaBottleWater } from "react-icons/fa6";
 
 const video = hotel_tour
 
@@ -80,7 +81,7 @@ const roomsType = [
       desc: 'Make yourself at home in our tastefully designed room. Perfect for long stay guests and families. This moderm room offers all the comforts of home and spectacular view',
       amenities:[ 
         {icon:<MdRoomPreferences/>,title:'Big rooms'},
-        {icon:<MdOutlineBed/>,title:'King sized bed'},
+        {icon:<IoBedOutline/>,title:'King sized bed'},
         {icon:<FaTv/>,title:'smart Tv'},
         {icon:<FaWifi/>,title:'Wi-fi'},
         {icon:<FaShower/>,title:'rain shower'},
@@ -95,7 +96,7 @@ const roomsType = [
       desc: 'Convenient and comfortable for long and short stays.  They appeal to travelers on business trips and tourist looking for simplicity.',
       amenities:[ 
         {icon:<MdRoomPreferences/>,title:'Big rooms'},
-        {icon:<MdOutlineBed/>,title:'King sized bed'},
+        {icon:<IoBedOutline/>,title:'King sized bed'},
         {icon:<FaTv/>,title:'smart Tv'},
         {icon:<FaWifi/>,title:'Wi-fi'},
         {icon:<FaShower/>,title:'rain shower'},
@@ -109,7 +110,7 @@ const roomsType = [
       desc: 'Enjoy the upgrade of the doble deluxe,  with an amazing sitting room to the double sized king-sized beds in the bedroom. The room’s big windows and the balcony  offer you wonderful view and a perfect relaxation spot. Its perfect for long stay guests and family.',
       amenities:[ 
         {icon:<MdRoomPreferences/>,title:'Big rooms'},
-        {icon:<MdOutlineBed/>,title:'King sized bed'},
+        {icon:<IoBedOutline/>,title:'King sized bed'},
         {icon:<FaTv/>,title:'smart Tv'},
         {icon:<FaWifi/>,title:'Wi-fi'},
         {icon:<FaShower/>,title:'rain shower'},
@@ -123,7 +124,7 @@ const roomsType = [
       desc: 'Cozy room perfectly designed to deliver comfort.  This Spacious room easily offers an inviting feel with modern amenities for a relaxing, enjoyable stay for our corporate or leisure guest. Couple up with great views of the surrounding its an ideal room for your next visit.',
       amenities:[ 
         {icon:<MdRoomPreferences/>,title:'Big rooms'},
-        {icon:<MdOutlineBed/>,title:'King sized bed'},
+        {icon:<IoBedOutline/>,title:'King sized bed'},
         {icon:<FaTv/>,title:'smart Tv'},
         {icon:<FaWifi/>,title:'Wi-fi'},
         {icon:<FaShower/>,title:'rain shower'},
@@ -137,7 +138,7 @@ const roomsType = [
       desc: 'Premium experience requires premium services. It is a perfect pick if you want to delight yourself in style, savor unparallel moments and comfort. Furnished with modern essentials, elegant furniture, fittings and modern-day amenities.  This room is simply the best with an aura to make yourself at home, it assures you executive luxurious experience.',
       amenities:[ 
         {icon:<MdRoomPreferences/>,title:'Big rooms'},
-        {icon:<MdOutlineBed/>,title:'King sized bed'},
+        {icon:<IoBedOutline/>,title:'King sized bed'},
         {icon:<FaTv/>,title:'smart Tv'},
         {icon:<FaWifi/>,title:'Wi-fi'},
         {icon:<FaShower/>,title:'rain shower'},
@@ -152,14 +153,14 @@ const standard_room = {
   name: 'standard  room',
   displayAmenities:[
     {icon:<MdTv/>,title:'Smart Tv'},
-    {icon:<MdOutlineBed/>,title:'King sized-bed'},
+    {icon:<IoBedOutline/>,title:'King sized-bed'},
     {icon:<FaWifi/>,title:'Wi-fi'},
   ],
   desc: 'Make yourself at home in our tastefully designed room. Perfect for long stay guests and families. This moderm room offers all the comforts of home and spectacular view.',
   price:80000,
   allAmenities:[
     {icon:<MdRoomPreferences/>,title:'Spacious room'},
-    {icon:<MdOutlineBed/>,title:'King sized bed'},
+    {icon:<IoBedOutline/>,title:'King sized bed'},
     {icon:<MdTv/>,title:'large smart Tv'},
     {icon:<MdOutlineDesk/>,title:'Working desk'},
     {icon:<FaWifi/>,title:'High speed Wi-Fi'},
@@ -180,7 +181,7 @@ const deluxe = {
   name: 'deluxe room',
     displayAmenities:[
     {icon:<MdTv/>,title:'Smart Tv'},
-    {icon:<MdOutlineBed/>,title:'King sized-bed'},
+    {icon:<IoBedOutline/>,title:'King sized-bed'},
     {icon:<FaWifi/>,title:'Wi-fi'},
   ],
   desc: 'Convenient and comfortable for long and short stays.  They appeal to travelers on business trips and tourist looking for simplicity.',
@@ -188,7 +189,7 @@ const deluxe = {
   capacity:{guests:2, bed:1},
   allAmenities:[
     {icon:<MdRoomPreferences/>,title:'Spacious room'},
-    {icon:<MdOutlineBed/>,title:'King sized bed'},
+    {icon:<IoBedOutline/>,title:'King sized bed'},
     {icon:<MdTv/>,title:'large smart Tv'},
     {icon:<MdOutlineDesk/>,title:'Working desk'},
     {icon:<FaWifi/>,title:'High speed Wi-Fi'},
@@ -208,7 +209,7 @@ const double_deluxe = {
   name: 'double deluxe',
     displayAmenities:[
      {icon:<MdTv/>,title:'Smart Tv'},
-    {icon:<MdOutlineBed/>,title:'King sized-bed'},
+    {icon:<IoBedOutline/>,title:'King sized-bed'},
     {icon:<FaWifi/>,title:'Wi-fi'},
   ],
   desc: 'Enjoy the upgrade of the doble deluxe,  with an amazing sitting room to the double sized king-sized beds in the bedroom. The room’s big windows and the balcony  offer you wonderful view and a perfect relaxation spot. Its perfect for long stay guests and family.',
@@ -216,7 +217,7 @@ const double_deluxe = {
   capacity:{guests:4, bed:2},
   allAmenities:[
     {icon:<MdRoomPreferences/>,title:'Spacious room'},
-    {icon:<MdOutlineBed/>,title:'King sized bed'},
+    {icon:<IoBedOutline/>,title:'King sized bed'},
     {icon:<MdTv/>,title:'large smart Tv'},
     {icon:<MdOutlineDesk/>,title:'Working desk'},
     {icon:<FaWifi/>,title:'High speed Wi-Fi'},
@@ -239,14 +240,14 @@ const suite = {
   name: 'suite',
     displayAmenities:[
       {icon:<MdTv/>,title:'Smart Tv'},
-    {icon:<MdOutlineBed/>,title:'King sized-bed'},
+    {icon:<IoBedOutline/>,title:'King sized-bed'},
     {icon:<FaWifi/>,title:'Wi-fi'},
   ],
   desc: 'Cozy room perfectly designed to deliver comfort.  This Spacious room easily offers an inviting feel with modern amenities for a relaxing, enjoyable stay for our corporate or leisure guest. Couple up with great view of the city is an ideal room for your next visit.',
   price:180000,
   capacity:{guests:2, bed:1},
   allAmenities:[
-    {icon:<MdOutlineBed/>,title:'King sized bed'},
+    {icon:<IoBedOutline/>,title:'King sized bed'},
     {icon:<MdRoomPreferences/>,title:'Spacious room'},
     {icon:<LuSofa/>,title:'Living room'},
     {icon:<MdTv/>,title:'large smart Tv'},
@@ -272,14 +273,14 @@ const executive_suite = {
     name: 'executive suite',
       displayAmenities:[
     {icon:<MdTv/>,title:'Smart Tv'},
-    {icon:<MdOutlineBed/>,title:'King sized-bed'},
+    {icon:<IoBedOutline/>,title:'King sized-bed'},
     {icon:<FaWifi/>,title:'Wi-fi'},
   ],
     desc: 'Executive stays calls for premium services and this suite fits the purpose. It is a perfect pick if you want to delight yourself in style,luxury to savor unparalleled moments in comfort. Furnished with modern essentials, elegant furniture, fittings and modern-day amenities.  This room is simply the best with an aura to make yourself at home, it assures you executive luxurious experience.',
     price: 200000,
     capacity:{guests:2, bed:1},
     allAmenities:[
-      {icon:<MdOutlineBed/>,title:'King sized bed'},
+      {icon:<IoBedOutline/>,title:'King sized bed'},
       {icon:<MdRoomPreferences/>,title:'Spacious room'},
       {icon:<MdTv/>,title:'large smart Tv'},
       {icon:<LuSofa/>,title:'Living room'},
@@ -306,14 +307,14 @@ const presidential_suite = {
   name: 'presidential suite',
     displayAmenities:[
   {icon:<MdTv/>,title:'Smart Tv'},
-  {icon:<MdOutlineBed/>,title:'King sized-bed'},
+  {icon:<IoBedOutline/>,title:'King sized-bed'},
   {icon:<FaWifi/>,title:'Wi-fi'},
 ],
   desc: 'presidetial suite  ',
   price: 300000,
   allAmenities:[
-    {icon:<MdOutlineBed/>,title:'King sized-bed'},
-    {icon:<MdOutlineBed/>,title:'Working desk'},
+    {icon:<IoBedOutline/>,title:'King sized-bed'},
+    {icon:<MdOutlineDesk/>,title:'Working desk'},
     {icon:<MdTv/>,title:'large smart Tv'},
     {icon:<MdRoomPreferences/>,title:'Spacious room'},
     {icon:<FaWifi/>,title:'High speed Wi-Fi'},

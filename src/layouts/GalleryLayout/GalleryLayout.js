@@ -27,7 +27,7 @@ const GalleryLayout = ({gallery}) => {
       {
       openModal &&
       <div className='gallery-modal' >
-        <i className='close-modal' onClick={close}><MdClose/></i>
+        <button type='button' className='close-modal_btn ' onClick={close}><MdClose/></button>
 
         <div className='gallery-modal-content'>
           <div className='gallery-modal-image'>
@@ -45,8 +45,7 @@ const GalleryLayout = ({gallery}) => {
               })
             }
           </div>
-          }
-         
+          }    
         </div>
       </div>
       }

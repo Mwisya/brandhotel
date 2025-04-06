@@ -23,7 +23,7 @@ const Contact = () => {
   return (
     <section className='contacts'>
       <div className='contacts-wrapper'>
-      <div className='contacts-left'>
+        <div className='contacts-left'>
           <h2>Front desk</h2>
           <div className='contacts-call'>
             <span>Call Us:</span>
@@ -53,8 +53,7 @@ const Contact = () => {
             <textarea name="message" placeholder="Type message..."></textarea>
           </div>
           <input type="submit" value="Send" className='submit-btn' />     
-        </form>
-        
+        </form>   
       </div>
     </section>
   )

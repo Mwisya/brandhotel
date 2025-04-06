@@ -68,7 +68,7 @@ const Highlights = () => {
                 <div key={index} className='highlight'>
                     <div>
                         <i>{highlight.icon}</i>
-                        <h4>{highlight.heading}</h4>
+                        <span>{highlight.heading}</span>
                     </div>
                     <p>{highlight.content}</p>
                 </div>

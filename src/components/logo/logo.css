@@ -1,28 +1,20 @@
 .hotel-logo-container{
+    height: max-content;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 3px;
+    gap: 1px;
 }
 .hotel-logo{
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: lightblue;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
     overflow: hidden;
-    & img{
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        object-position: center;
-    }
 }
 .hotel-name{
-    white-space: nowrap;
     color: black;
     text-transform: uppercase;
-    font-weight: 500;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }

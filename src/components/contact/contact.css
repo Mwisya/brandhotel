@@ -1,6 +1,7 @@
 .contacts{
     width: 100%;
     margin-top: 32px;
+    padding: 16px;
 }
 .contacts-wrapper{
     width: 100%;
@@ -9,7 +10,7 @@
 }
 .contacts-right{
     width: 100%;
-    padding: 16px 32px;
+    padding: 16px 0;
     margin-bottom: 32px;
 
 }
@@ -22,7 +23,7 @@
 }
 .contacts-right div input{
     width: 100%;
-    padding: 5px 0;
+    padding: 8px 0;
     outline: none;
     border: 0;
     border-bottom: 1px solid gray;
@@ -52,7 +53,7 @@
 }
 .contacts-left{
     width: 100%;
-    padding: 16px;
+    padding: 16px 0;
     display: block;
     text-align: center;
 }
@@ -139,9 +140,14 @@
 
 @media screen and (min-width:1024px) {
     .contacts-wrapper{
-        width: 70%;
+        width: 80%;
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width:1220px) {
+    .contacts-wrapper{
+        width: 70%;
     }
 }
