@@ -6,7 +6,7 @@ const Display = ({title, image}) => {
     <section className='display'>
       <img src={image} loading='lazy' alt="" />
       <div className='display-heading'>
-        <p>explore brand hotel</p>
+        <p>explore</p>
         <h1>{title}</h1>
       </div>
     </section>

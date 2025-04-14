@@ -1,7 +1,7 @@
-import './whatsApp.css'
+import './contactButtons.css'
 import React from 'react'
 
-const WhatsApp = () => {
+const ContactButtons = () => {
   return (
     <div className='cta-btn-fixed'>
       <a id='whatsapp' href="http://api.whatsapp.com/send?phone=+255746780271">whatsApp</a>
@@ -11,4 +11,4 @@ const WhatsApp = () => {
   )
 }
 
-export default WhatsApp
+export default ContactButtons

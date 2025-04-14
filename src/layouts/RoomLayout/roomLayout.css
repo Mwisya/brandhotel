@@ -5,7 +5,7 @@
 
 .room-display{
     width: 100%;
-    height: 500px;
+    height: 550px;
     position: relative;
 }
 .room-display img{
@@ -40,7 +40,7 @@
 }
 .amenities-sample_wrapper{
     display: flex;
-    gap: 32px;
+    gap: 24px;
     color: white;
 }
 .amenities-sample_wrapper div{
@@ -48,14 +48,16 @@
     flex-direction: column;
     align-items: center;
     text-transform: capitalize;
-    gap: 8px;
 }
 .amenities-sample_wrapper div svg{
     font-size: 24px;
 }
 .amenities-sample_wrapper div span{
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
+    &::first-letter{
+        text-transform:capitalize;
+    }
 }
 .room-description{
     width: min(100%, 768px);
@@ -155,6 +157,8 @@
         height: 24px;
         background-color: #f1f1f1;
         padding: 4px;
+        color: #F27300;
+
     }
 }
 .checkin-and-checkout{
@@ -183,16 +187,17 @@
     align-items: flex-start;
     justify-content: center;
     border-radius: 8px;
-    padding: 8px 16px;
+    padding: 16px;
     margin: 16px 0 8px;
     border:  1px solid #f1f1f1;
+    background-color: #f1f1f1;
     & h3{
         font-weight: 400;
         text-transform: capitalize;
     }
 }
 .room-price .price{
-    padding: 8px 0;
+    padding: 10px 0;
     display: flex;
     align-items: flex-end;
     & svg{
@@ -201,12 +206,13 @@
     }
     & div{
         font-weight: 500;
-        font-size: 20px;
+        font-size: 18px;
     }
     & span{
         margin-left: 5px;
         display: flex;
         align-self: center;
+        font-size: 14px;
     }
 }
 .room-price_capacity{
@@ -216,15 +222,16 @@
 .room-price_capacity span{
     display: flex;
     align-items: flex-end;
-    text-transform: capitalize;
-    font-size: var(--fs-small);
+    font-size: var(--fs-xsmall);
     font-weight: 400;
+    &::first-letter{
+        text-transform: capitalize;
+    }
     & svg{
-        color: black;
+        color: #F27300;
         font-size: 18px;
         margin-right: 6px;
     }
-    
 }
 .booking-btn{
     padding: 16px;
@@ -234,7 +241,6 @@
     text-transform: capitalize;
     color: white;
     background-color: #F27300;
-    border-radius: 50px;
 }
 
 .room-gallery-container{

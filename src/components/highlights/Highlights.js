@@ -66,11 +66,11 @@ const Highlights = () => {
         { highlights.map((highlight, index)=>{
             return(
                 <div key={index} className='highlight'>
+                    <i>{highlight.icon}</i>
                     <div>
-                        <i>{highlight.icon}</i>
                         <span>{highlight.heading}</span>
+                        <p>{highlight.content}</p>
                     </div>
-                    <p>{highlight.content}</p>
                 </div>
             ) })  }
         </div>

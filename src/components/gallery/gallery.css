@@ -14,10 +14,12 @@
     color: black;
     overflow: hidden;
     font-size: var(--fs-normal);
+    font-weight: 500;
     padding: 8px;
     letter-spacing: 1.5px;
     text-transform: capitalize;
     background-color: transparent;
+
 }
 .gallery-btn:hover{
     font-weight: 500;

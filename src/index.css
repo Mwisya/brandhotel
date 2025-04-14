@@ -6,6 +6,7 @@
   --icon-color: #F27300; 
   --icon-size-normal: 24px; 
   --icon-size-lg: 32px; 
+  --fs-xsmall: 14px;
   --fs-small: 15px;
   --fs-normal: 16px;
   --fs-large: 18px;
@@ -21,7 +22,6 @@ body, html {
     sans-serif;
    background-color: var(--bg-primary);
 }
-
 h1,h2{
   font-family: "Lora", serif;
   font-optical-sizing: auto;

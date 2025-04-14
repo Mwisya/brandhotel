@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import './roomLayout.css'
-import { MdWhatsapp,MdClose, MdOutlineBed, MdWallet, MdOutlineMail, MdPhoneAndroid } from 'react-icons/md'
+import { MdWhatsapp,MdClose, MdOutlineBed, MdOutlineMail, MdPhoneAndroid } from 'react-icons/md'
 import BookingPopUp from '../../components/bookingPopUp/BookingPopUp'
 import {IoPeopleOutline } from 'react-icons/io5'
 
@@ -74,11 +74,11 @@ const RoomLayout = ({room}) => {
             <div className='room-price'>
               <h3>{room.name}</h3>   
               <div className='price'>
-                <MdWallet/><div>Tsh {price}</div><span>/night</span> 
+                <div>Tsh {price}</div><span>/night</span> 
               </div> 
               <div className='room-price_capacity'>
-                <span><MdOutlineBed/> {room.capacity.bed} King Bed </span>    
-                <span><IoPeopleOutline/> Upto {room.capacity.guests} Guests </span>
+                <span><MdOutlineBed/> {room.capacity.bed} King bed </span>    
+                <span><IoPeopleOutline/> Upto {room.capacity.guests} guests </span>
               </div>
             </div>
           </div>

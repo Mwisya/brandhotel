@@ -24,14 +24,15 @@
    
 }
 .carousel-content{
-    padding: 16px;
+    padding: 16px 24px;
     color: white;
     position: absolute;
-    bottom: 15%;
+    bottom: 17%;
     left: 0;
     z-index: 1;
     & h1{
-        font-size: 32px;
+        font-size: 2rem;
+        font-weight: 500;
         text-transform: capitalize;
     }
 }
@@ -71,7 +72,7 @@
     height:  8px;
     position: absolute;
     z-index: 1;
-    bottom: 32px;
+    bottom: 35px;
 
     display: flex;
     gap: 16px;
@@ -96,12 +97,21 @@
     .carousel-container{
         height: 550px;
     }
+    .carousel{
+        width: 100%;
+    }
     .carousel-content{
         left: 5%;
+        & h1{
+            font-size: 2.2rem;
+        }
     }
 }
 @media screen and (min-width: 1220px) {
     .carousel-content{
-        left: 10%;
+        left: 5%;
+        & h1{
+            font-size: 2.4rem;
+        }
     }
 }

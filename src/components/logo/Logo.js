@@ -5,7 +5,9 @@ import logo from '../../logo.png'
 const Logo = () => {
   return (
     <div className='hotel-logo-container'>
-      <img src={logo} alt='' className='hotel-logo'/>
+      <i className='hotel-logo'>
+        <img src={logo} alt=''/>
+      </i>
       <h3 className='hotel-name'>brand hotel</h3>
     </div>
   )

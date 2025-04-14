@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import './sideNav.css'
 import logo from '../../logo.png'
 import { Link } from 'react-router-dom'
-import {MdWhatsapp, MdOutlineEmail, MdAdd, MdClose } from 'react-icons/md'
+import {MdAdd, MdClose } from 'react-icons/md'
 
 
 const SideNav = ({onClick}) => {
@@ -37,17 +37,12 @@ const SideNav = ({onClick}) => {
         <Link className='navLink' to={"about"} onClick={onClick}>About us</Link>
       </div>
       <div className="sidenav-contact">
-        <h4>contact information</h4>
+        <h2>contact information</h2>
+        <h3>Reservations</h3>
         <div className='sidenav-contact_tel' >
-          <span>Tel:</span>
-          <div>
-            <a href="tel:+255750866722"> +255 750 866 722</a>
-            <a href="tel:+255750866722"> +255 750 866 722</a>
-          </div>
-        </div>
-        <div className='sidenav-contact_btns'>
-          <a href="mailto:reservations@brandhotel-dodoma.com" ><MdOutlineEmail/></a>
-          <a href="http://api.whatsapp.com/send?phone=+254746780271"><MdWhatsapp/></a>
+          <a href="tel:+255750866722"> +255 750 866 722</a>
+          <a href="tel:+255750866722"> +255 750 866 722</a>
+          <a href="mailto:reservations@brandhotel-dodoma.com"  className='email'>reservations@brandhotel-dodoma.com</a>
         </div>
       </div>
     </div>
