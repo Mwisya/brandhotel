@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route} from 'react-router-dom';
 import { ContactButtons, Footer, Header } from './components';
-import { AboutUs, GalleryPage,  ContactUs, Deluxe, DoubleDeluxe, ExecutiveSuite, Home, Meetings,RoomsPage, PresidentialSuite,  StandardRoom, Suite, TandConditions, PrivacyPolicyPage } from './pages';
+import { AboutUs, GalleryPage,  ContactUs, Deluxe, TwinRoom, ExecutiveSuite, Home, Meetings,RoomsPage,  StandardRoom, Suite, TandConditions, PrivacyPolicyPage, JuniorSuite } from './pages';
 import './App.css'
 
 function App() {
@@ -11,12 +11,12 @@ function App() {
       <Routes>
         <Route exact path='/' element={<Home/>}/>
         <Route path='rooms' element={<RoomsPage/>}>
-          <Route path='deluxe' element={<Deluxe/>}/>
-          <Route path='double-deluxe' element={<DoubleDeluxe/>}/>
           <Route path='standard-room' element={<StandardRoom/>}/>
+          <Route path='deluxe' element={<Deluxe/>}/>
+          <Route path='twin-room' element={<TwinRoom/>}/>
+          <Route path='junior-suite' element={<JuniorSuite/>}/>
           <Route path='suite' element={<Suite/>}/>
           <Route path='executive-suite' element={<ExecutiveSuite/>}/>
-          <Route path='presidential-suite' element={<PresidentialSuite/>}/>
         </Route>
         <Route path='about' element={<AboutUs/>}/>
         <Route path='contact' element={<ContactUs/>}/>    

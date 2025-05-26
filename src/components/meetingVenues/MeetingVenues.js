@@ -1,5 +1,6 @@
 import React from 'react'
 import './meetingVenues.css'
+import { Link } from 'react-router-dom'
 
 const MeetingVenues = ({data}) => {
   const {venues} = data
@@ -10,7 +11,8 @@ const MeetingVenues = ({data}) => {
             <h2>{venues.venuesName} </h2>
             <p>{venues.venuesContent}       
             </p>
-            <a href="meetings">explore venues</a>
+            {/* <a href="/meetings">explore venues</a> */}
+            <Link to="/meetings" className='meeting-page-link' >Explore more</Link>  
           </div>
 
           <div className="meeting-venues">

@@ -23,7 +23,7 @@
     & p{
         text-align: center;
     }
-    & a{
+    & .meeting-page-link{
         width: max-content;
         padding: 8px 16px;
         margin-top: 32px;

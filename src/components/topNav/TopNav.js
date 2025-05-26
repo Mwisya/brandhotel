@@ -8,12 +8,13 @@ const TopNav = () => {
     <nav className='topnav'>
       <Link className='topnav-link' to={'/'}>Home</Link>
       <div className='dropdown'>
-        <span className='dropdown-heading'>rooms<BiChevronDown/></span>
+        <button>rooms <i><BiChevronDown/></i> </button>
 
         <div className='dropdown-menu'>  
           <Link className='topnav-sublink' to={'rooms/standard-room'}>standard room</Link>
           <Link className='topnav-sublink' to={'rooms/deluxe'}>deluxe</Link>
-          <Link className='topnav-sublink' to={'rooms/double-deluxe'}>double deluxe</Link>
+          <Link className='topnav-sublink' to={'rooms/twin-room'}>twin room</Link>
+          <Link className='topnav-sublink' to={'rooms/junior-suite'}>junior suite</Link>
           <Link className='topnav-sublink' to={'rooms/suite'}>suite</Link>
           <Link className='topnav-sublink' to={'rooms/executive-suite'}>executive suite</Link>
         </div>   

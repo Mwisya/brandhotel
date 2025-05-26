@@ -1,42 +1,78 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, useRef} from 'react'
 import './carousel.css'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa6'
  
 
 const Carousel = ({data}) => {
-  const [curr, setCurr] = useState(0)
+  const [curr, setCurr] = useState(1)
   const slideLength = data.length;
-  const autoslide = true;
-      
-  const next = () => {
-    setCurr((curr) => curr === slideLength - 1 ? 0 : curr + 1)
-  }
-  const prev = () => {
-    setCurr((curr) => curr === 0 ? slideLength - 1 : curr - 1)
-  }
+  // Control transition for resets
+  const [isTransitioning, setIsTransitioning] = useState(true);
+  const sliderRef = useRef(null);
+
+   // Extended slides: [last, 1, 2, 3, first]
+    const extendedSlides = [
+      data[data.length - 1], // Clone of last slide
+      ...data, // Original slides
+      data[0], // Clone of first slide
+    ];
+    // Auto-slide effect
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setCurr((prevIndex) => prevIndex + 1);
+        setIsTransitioning(true);
+    }, 7000); // Change slide every 7 seconds
+  
+      return () => clearInterval(interval); // Cleanup on unmount
+    }, []);
+  
+    // Handle transition end to reset index for infinite loop
+    useEffect(() => {
+      if (curr === extendedSlides.length - 1) {
+        // Reached cloned first slide, reset to first real slide
+        setTimeout(() => {
+          setIsTransitioning(false);
+          setCurr(1);
+        }, 7000); // Match transition duration
+      } else if (curr === 0) {
+        // Reached cloned last slide, reset to last real slide
+        setTimeout(() => {
+          setIsTransitioning(false);
+          setCurr(data.length);
+        }, 7000); // Match transition duration
+      }
+    }, [curr]);
+  
+    
+    const next = () => {
+      setCurr((curr) => curr === slideLength - 1 ? 0 : curr + 1)
+    }
+    const prev = () => {
+      setCurr((curr) => curr === 0 ? slideLength - 1 : curr - 1)
+    }
  
-  useEffect( () => {
-    if( !autoslide ) return;
-    const slideInterval = setInterval(next, 7000)
-    return () =>  clearInterval(slideInterval)
-  }, [])
-
-
   return (
     <section className='carousel-container'>
       <FaChevronLeft className='arrow prev' onClick={prev}/>
       <FaChevronRight className='arrow next' onClick={next}/>
         
       { 
-        data.map((img, index) => {
+        extendedSlides.map((img, index) => {
           return(
-              <div key={index} className='carousel' style={{ transform: `translateX(-${curr * 100}%)` }}>
+            <div key={index}      
+            ref={sliderRef}
+             className='carousel' 
+             style={{ 
+              transform: `translateX(-${curr * 100}%)`,
+              transition: isTransitioning ? 'transform 1.5s ease-in-out' : 'none'
+             }}
+            >
 
-                <img src={img.image} alt="" />
-                <div className='carousel-content'>
-                  <h1>{img.title}</h1>
-                </div>
+              <img src={img.image} alt={`Slide ${index}`} />
+              <div className='carousel-content'>
+                <h1>{img.title}</h1>
               </div>
+            </div>
         )})
       }
 

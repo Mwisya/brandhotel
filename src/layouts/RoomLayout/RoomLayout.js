@@ -68,13 +68,18 @@ const RoomLayout = ({room}) => {
         <div className='room-reservation'>
           <h2>Bookings & reservations</h2>
           <p>Enjoy peaceful stay full of comfort and style in Dodoma
-            <div><MdPhoneAndroid/> <MdOutlineMail/> <MdWhatsapp/> </div>
+            <div>      
+              <a href="tel:+255773467756"><MdPhoneAndroid/></a>
+              <a href="mailto:bookings@brandhotel-dodoma.com" className='footer-email'> 
+              <MdOutlineMail/></a>
+              <a href="http://api.whatsapp.com/send?phone=+254746780271"><MdWhatsapp/></a>
+            </div>
           </p>
           <div className='room-price-booking'>
             <div className='room-price'>
               <h3>{room.name}</h3>   
               <div className='price'>
-                <div>Tsh {price}</div><span>/night</span> 
+                <div>Tsh {price}</div><span> per night</span> 
               </div> 
               <div className='room-price_capacity'>
                 <span><MdOutlineBed/> {room.capacity.bed} King bed </span>    
@@ -83,8 +88,8 @@ const RoomLayout = ({room}) => {
             </div>
           </div>
           <div className='checkin-and-checkout'>
-            <div><span>check in: </span>10:00hrs</div> |
-            <div><span>check out: </span>2:00hrs</div>
+            <div><span>check in: </span>2:00hrs</div> |
+            <div><span>check out: </span>10:00hrs</div>
           </div>
           <button type="button" onClick={open_popup} className='booking-btn' >Book now</button>
         </div>
@@ -94,24 +99,26 @@ const RoomLayout = ({room}) => {
       <section className='room-gallery-container'>
         <h2 className="room-gallery-heading">Room Gallery</h2>
         <div className='room-gallery'>
-         { room.video && 
-            <div onClick={open_modal}>
-              <video src={room.video} autoPlay muted loop onClick={()=>setFile(room.video)}/>
-            </div>
-          }
-          { room.images.map((image, index)=>
+          { room.media.map((file, index) =>
             <div key={index} onClick={open_modal}>
-              <img src={image} alt="" onClick={()=>setFile(image)}/>,
+              {
+                file.type === 'image'
+                ? 
+                <img src={file.url} alt="" onClick={()=>setFile(file)}/>
+                :
+                <video src={file.url}  muted loop onClick={()=>setFile(file)}/>
+
+              }
             </div>
            )}
         </div>      
         { openModal && 
-          <div className='modal' onClick={()=>setOpenModal(false)}>
-            <i className='close-modal'  onClick={()=>{setOpenModal(false)}}><MdClose/></i>
+          <div className='modal'>
+            <button type="button" className='close-modal' onClick={()=>{setOpenModal(false)}}><MdClose/></button>
             <div className='modal-content'>
-              {file ?
-               <img src={file}  alt="" /> :
-                <video src={file}  autoPlay muted loop/>
+              {file?.type === 'video' ?
+                <video src={file.url}  autoPlay muted loop/> :
+                <img src={file.url}  alt="" /> 
               }
             </div>
           </div>

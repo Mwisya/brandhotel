@@ -9,39 +9,47 @@ const helmetData = {
         keywords: "home, accomodation, rooms and suites, meetings, conference, restaurant, dinning"
     },
     standardroom:{
-        title:'Standard Room - Brand Hotel Dodoma',
+        title:'Standard Rooms - Brand Hotel Dodoma',
         name:'description',
-        content:  'Rooms and Suites | Standard room',
+        content:  'Rooms and Suites | Standard rooms',
         keywordsname:'keywords',
-        keywords: "rooms and suites, standard room, accomodation "
+        keywords: "rooms and suites, standard rooms, accomodation "
     },
     deluxeroom:{
-        title:'Deluxe room - Brand Hotel Dodoma ',
+        title:'Deluxe rooms - Brand Hotel Dodoma ',
         name:'description',
-        content:  'Rooms and Suites |  Deluxe',
+        content:  'Rooms and Suites |  Deluxe rooms',
         keywordsname:'keywords',
-        keywords: "rooms and suites, deluxe, accomodation "
+        keywords: "rooms and suites, deluxe rooms, accomodation "
     },
-    doubledeluxe:{
-        title:'Double Deluxe - Brand Hotel Dodoma',
+    twinroom:{
+        title:'Twin Rooms - Brand Hotel Dodoma',
         name:'description',
-        content: 'Rooms and Suites | Double Deluxe',
+        content: 'Rooms and Suites | Twins Rooms',
         keywordsname:'keywords',
-        keywords: "rooms and suites, double deluxe, accomodation "
+        keywords: "rooms and suites, Twins Rooms, accomodation "
     },
+     juniorsuite:{
+        title:'Junior Suites - Brand Hotel Dodoma',
+        name:'description',
+        content: 'Rooms and Suites | Junior Suites',
+        keywordsname:'keywords',
+        keywords: "rooms and suites, Junior Suites, accomodation "
+    },
+    
     suiteroom:{
         title:'Suite - Brand Hotel Dodoma',
         name:'description',
-        content:  'Rooms and Suites | Suite',
+        content:  'Rooms and Suites | Suites',
         keywordsname:'keywords',
-        keywords: "rooms and suites, suite, accomodation "
+        keywords: "rooms and suites, suites, accomodation "
     },
     executivesuite:{
-        title:'Executive Suite - Brand Hotel Dodoma',
+        title:'Executive Suites - Brand Hotel Dodoma',
         name:'description',
-        content:  'Rooms and Suites | Executive suite',
+        content:  'Rooms and Suites | Executive suites',
         keywordsname:'keywords',
-        keywords: "rooms and suites, executive suite, accomodation "
+        keywords: "rooms and suites, executive suites, accomodation "
     },
     meeting:{
         title:'Conference & Meetings - Brand Hotel Dodoma',

@@ -137,6 +137,11 @@
         color: #F27300;
     }
 }
+.message{
+    font-size: 14px;
+    margin: 12px 12px 24px;
+    text-align: center;
+}
 
 @media screen and (min-width:1024px) {
     .contacts-wrapper{

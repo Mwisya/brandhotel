@@ -16,8 +16,10 @@ const GalleryLayout = ({gallery}) => {
         {
           gallery.map((image, index)=>{
             return(
-            <div className='image-container' onClick={()=> setFile(image)}  key={index}>
-              <img src={image} alt="" onClick={open}/>   
+            <div className='image-container'
+              onClick={()=> setFile(image)} 
+              key={index}>
+            <img src={image} alt="" onClick={open}/>   
             </div>
             
             ) 
@@ -27,7 +29,7 @@ const GalleryLayout = ({gallery}) => {
       {
       openModal &&
       <div className='gallery-modal' >
-        <button type='button' className='close-modal_btn ' onClick={close}><MdClose/></button>
+        <button type='button' className='close-modal-btn ' onClick={close}><MdClose/></button>
 
         <div className='gallery-modal-content'>
           <div className='gallery-modal-image'>

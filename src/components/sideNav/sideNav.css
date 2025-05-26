@@ -1,6 +1,6 @@
 .sidenav-backdrop{
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
     height: 100vh;
     display: flex;
     justify-content: flex-start;
@@ -50,30 +50,33 @@
     color: black;
     padding: 8px 10px;
     font-size: 1.4rem;
+    font-family: "Lora", serif;
     text-transform: capitalize;
     display: flex;
     align-items: center;
+    font-weight: 400;
 }
 .submenu-heading{
     width: 100%;
     padding: 8px 10px;
     font-size: 1.4rem;
+    font-family: "Lora", serif;
     text-transform: capitalize;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
-
+    font-weight: 400;
     & svg{
         font-size: 24px;
         color: gray;
     }
 }
 .navLink:hover, .submenu-heading:hover{
-    background-color: #76871D;
+    background-color: #F27300;
     font-weight: 400;
     color: white;
-    transition: all 250ms ease;
+    transition: all 250ms ease-in-out;
    & svg{
         color: white;
    }
@@ -87,42 +90,55 @@
     flex-direction: column;
     color: rgba(0, 0, 0, 0.8);
 }
-.sidenav-contact{
+.sidenav-contact-wrapper{
     padding: 16px 10px;
-    margin-top: 16px;
     border-top: 1px solid #f1f1f1;
     border-radius: 10px;
     display: flex;
+    gap: 10px;
     flex-direction: column;
     justify-content: flex-start;
-    & h2{
+    & h3{
         text-transform: capitalize;
-        margin-bottom: 4px;
         color: #F27300;
         font-weight: 200;
         font-family: "Lora", serif;
         font-optical-sizing: auto;
         font-style: normal;
     }
-    & h3{
-        text-transform: capitalize;
-        margin-bottom: 16px;
-        font-weight: 400;
-    }   
-}
-.sidenav-contact_tel{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: flex-start;
     & a{ 
         font-size: var(--fs-small);
         color: black;
     }
 }
-.sidenav-contact_tel .email{
-    font-weight: 500;
-    margin-top: 4px;
+.sidenav-contact{
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    & svg{
+        font-size: 24px;
+    }
+}
+
+.sidenav-contact-items{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.sidenav-contact-wrapper label{
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    background-color: #f1f1f1;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 200ms ease;
+}
+.sidenav-contact-wrapper label a svg{
+    font-size: 24px;
 }
 
 @keyframes transform-scale {

@@ -6,7 +6,7 @@ import { useRoomsContext } from '../../contextApi/roomsContext'
 
 
 const StandardRoom = () => {
-  const {standard_room} = useRoomsContext()
+  const {standardRoom} = useRoomsContext()
   const {standardroom } = useReactHelmetContext();
 
   return (
@@ -15,8 +15,8 @@ const StandardRoom = () => {
           <title>{standardroom.title}</title>
           <meta name={standardroom.description} content={standardroom.content} />
           <meta  name={standardroom.keywordsname} keywords={standardroom.keywords}/>
-        </Helmet>
-        <RoomLayout room = {standard_room}/>
+      </Helmet>
+        <RoomLayout room = {standardRoom}/>
       </main>
   )
 }
